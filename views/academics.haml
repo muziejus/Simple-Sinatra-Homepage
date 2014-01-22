@@ -6,9 +6,9 @@
         %a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") CV pdf
         )
     %section
-      %a#dissertationsubhead.trigger(href="#{anchors["dissertation"]}" title="Click to expand/collapse topic") 
+      %a#dissertation_subhead.trigger(href="#{subheads["dissertation"][:anchor]}" title="Click to expand/collapse topic") 
         %h2 Dissertation →
-      #dissertationbody.toggle(style="#{showmes["dissertation"]}")
+      #dissertation_body.toggle(style="#{subheads["dissertation"][:showme]}")
         :markdown      
           *The Site of the Novel: Objects in American Realism, 1930–1940* ([abstract pdf](http://moacir.com/pdfs/MoacirPdeSaPereira-dissertation-abstract.pdf)) is the name of the dissertation I wrote and defended in January 2014 under the direction of [Lauren Berlant](http://english.uchicago.edu/faculty/berlant) and [Kenneth W. Warren(http://english.uchicago.edu/faculty/warren). The dissertation sits at the intersection of my interests in:
 
@@ -27,9 +27,9 @@
           * **Counterfactual worlds and alternatives to neoliberalism**. The specific chronotopes of the novels influence the worlds in which they exist as well, meaning every realist novel permits, in J. K. Gibson-Graham’s [words](http://law.uvic.ca/demcon/victoria_colloquium/documents/gibson_2008_progress_paper.pdf), the “creativity to generate actual possibilities where none formerly existed.” Every novel, hence, is a box of revolutionary building blocks.
 
     %section
-      %a#otherinterestssubhead.trigger(href="#{anchors["otherinterests"]}" title="Click to expand/collapse topic")
+      %a#otherinterests_subhead.trigger(href="#{subheads["otherinterests"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Other interests →
-      #otherinterestsbody.toggle(style="#{showmes["otherinterests"]}")
+      #otherinterests_body.toggle(style="#{subheads["otherinterests"][:showme]}")
         :markdown
           Beyond what gets sufficient coverage in my dissertation, there are a wider set of interests that circulate around those key themes. I keep tabs on work done on early 20th century African-American and American communist literature, and I was lucky enough to assist in a course on latin@ literature and intellectual thought. Regarding the novel as a generic object of study, I’m interested in theories of the novel, histories of the novel, and contemporary attempts to use “distant reading” techniques to help better conceptualize this giant object called “the novel.”
             
@@ -40,13 +40,13 @@
           The literature surrounding English football hooligans, including fictional objects about them, fictional objects by them, as well as ethnographies and memoirs, continues to appeal to me as a crucible in which bubble concerns about the state, empire, individuality, and the power and appeal of the collective. Some of these ideas I collected into a 2012 article for *The Classical*, called “[Paris is Earning](http://theclassical.org/articles/paris-is-earning),” about neoliberalism and Parisian football hooligans. While not a work of literary criticism, the article shows a possible future line of inquiry for me.
     
     %section
-      %a#publishingsubhead.trigger(href="#{anchors["publishing"]}" title="Click to expand/collapse topic")
+      %a#publishing_subhead.trigger(href="#{subheads["publishing"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Publications, etc. →
-      #publishingbody.toggle(style="#{showmes["publishing"]}")
+      #publishing_body.toggle(style="#{subheads["publishing"][:showme]}")
         %section
-          %a#poparticlessubhead.trigger(href="#{anchors["poparticles"]}" title="Click to expand/collapse topic")
+          %a#poparticles_subhead.trigger(href="#{subheads["poparticles"][:anchor]}" title="Click to expand/collapse topic")
             %h3 Popular articles →
-          #poparticlesbody.toggle(style="#{showmes["poparticles"]}")
+          #poparticles_body.toggle(style="#{subheads["poparticles"][:showme]}")
             :markdown
               * “Paris Is Earning.” *The Classical*. [9 January 2012](http://theclassical.org/articles/paris-is-earning).
               
@@ -55,9 +55,9 @@
               * “Lietuva — ne MonoLietuva.” *Lrytas.lt*. [22 January 2008](http://www.lrytas.lt/-12009802021199868203-lietuva-ne-monolietuva.htm). [[English version](http://www.lithchat.com/culture-etc/evading-the-monolithuania.html)]
 
         %section
-          %a#presentationssubhead.trigger(href="#{anchors["presentations"]}" title="Click to expand/collapse topic")
+          %a#presentations_subhead.trigger(href="#{subheads["presentations"][:anchor]}" title="Click to expand/collapse topic")
             %h3 Presentations →
-          #presentationsbody.toggle(style="#{showmes["presentations"]}")
+          #presentations_body.toggle(style="#{subheads["presentations"][:showme]}")
             :markdown
               * “*Studs Lonigan*’s Failing Bodies and Other Objects Subject to Change” at the [Interdisciplinary Workshop in Paris](http://cas.uchicago.edu/workshops/workshop-info/interdisciplinary-workshop-in-paris/). February 2012.
                 
@@ -72,18 +72,18 @@
               * “Beyond ‘Flat Maps’: GIS in the Humanities” for a [Humanities Computing TechTalk](http://humanities.uchicago.edu/facultystaff/#humcomp). [June 2009](http://www.vimeo.com/4900082).
   
         %section
-          %a#selfpublishingsubhead.trigger(href="#{anchors["selfpublishing"]}" title="Click to expand/collapse topic")
+          %a#selfpublishing_subhead.trigger(href="#{subheads["selfpublishing"][:anchor]}" title="Click to expand/collapse topic")
             %h3 Self-publishing →
-          #selfpublishingbody.toggle(style="#{showmes["selfpublishing"]}")
+          #selfpublishing_body.toggle(style="#{subheads["selfpublishing"][:showme]}")
             :markdown
               * [*Donkey Hottie*](http://moacir.com/donkeyhottie/).
               
               * [*Lithchat*](http://www.lithchat.com/). (now on hiatus)
         
         %section
-          %a#cartographysubhead.trigger(href="#{anchors["cartography"]}" title="Click to expand/collapse topic")
+          %a#cartography_subhead.trigger(href="#{subheads["cartography"][:anchor]}" title="Click to expand/collapse topic")
             %h3 Cartography →
-          #cartographybody.toggle(style="#{showmes["cartography"]}")
+          #cartography_body.toggle(style="#{subheads["cartography"][:showme]}")
             :markdown
               * “Reorganization of Princely Hyderabad” in Datla, Kavita. *[The Language of Secular Islam: Urdu Nationalism and Colonial India](http://www.uhpress.hawaii.edu/p-8940-9780824836092.aspx)*. Honolulu, HI: University of Hawai‘i Press, 2013.
 
@@ -94,9 +94,9 @@
               * “[GIS](http://moacir.com/donkeyhottie/tag/gis/)” tag at *Donkey Hottie*, which includes nonce maps for quick analysis.
     
     %section
-      %a#teachingsubhead.trigger(href="#{anchors["teaching"]}" title="Click to expand/collapse topic")
+      %a#teaching_subhead.trigger(href="#{subheads["teaching"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Teaching →
-      #teachingbody.toggle(style="#{showmes["teaching"]}")
+      #teaching_body.toggle(style="#{subheads["teaching"][:showme]}")
         :markdown
           * English at the [École nationale des chartes](http://www.enc.sorbonne.fr/), from 2010–2011.
 
@@ -112,10 +112,10 @@
     %h1 Computing
     :markdown
       I have worked in information technology in some capacity since I was 16, and this exposure has affected my scholarship, inspiring me to try to use what I learn at work while solving technical problems to solve literary problems presented by the texts I study.
-  
-    %a#tinkeringsubhead.trigger(href="#{anchors["tinkering"]}" title="Click to expand/collapse topic")
+          
+    %a#tinkering_subhead.trigger(href="#{subheads["tinkering"][:anchor]}" title="Click to expand/collapse topic")
       %h2 Tinkering →
-    #tinkeringbody.toggle(style="#{showmes["tinkering"]}")
+    #tinkering_body.toggle(style="#{subheads["tinkering"][:showme]}")
       :markdown
         * [Bučinėlapis](http://bucinelapis.herokuapp.com/). A redevelopment of the [Toronto Kiss Map](http://torontokissmap.com), but in Vilnius and using [Open Street Map](http://openstreetmap.org). Ruby/Sinatra & Postgres.
 
@@ -136,10 +136,10 @@
         * [Baseball Pace Calculator](http://www.1984produkts.com/baseball.html). Figures out how many homeruns (or whatever) a player is on pace for. PHP.
 
         * [Procrastination hack](http://www.1984produkts.com/procrastination-hack/). A set of countdown timers that help manage your time based on the [(10 + 2)*5 algorithm](http://moacir.com/donkeyhottie/2009/11/25/1025-web-script-for-procrastinators/). JQuery.
-    
-    %a#toolssubhead.triggger(href="#{anchors["tools"]}" title="Click to expand/collapse topic")
+
+    %a#tools_subhead.trigger(href="#{subheads["tools"][:anchor]}" title="Click to expand/collapse topic")
       %h2 Tools →
-    #toolsbody.toggle(style="#{showmes["tools"]}")
+    #tools_body.toggle(style="#{subheads["tools"][:showme]}")
       :markdown
         * [DEVONthink Pro](http://www.devon-technologies.com/products/devonthink/index.html), an information management system for Mac OS X.
   
@@ -162,4 +162,3 @@
         * [ArcGIS](http://www.esri.com/software/arcgis/), an integrated system for creating a Geographic Information System.
 
         * [R](http://www.r-project.org/) (Free), a software environment for statistical computing.
-        

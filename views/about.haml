@@ -3,9 +3,9 @@
     %header
       %h1 Hello.
     %section
-      %a#biosubhead.trigger(href="#{anchors["bio"]}" title="Click to expand/collapse topic")
+      %a#bio_subhead.trigger(href="#{subheads["bio"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Bio →
-      #biobody.toggle(style="#{showmes["bio"]}")
+      #bio_body.toggle(style="#{subheads["bio"][:showme]}")
         :markdown
           I am from [New Bedford](http://en.wikipedia.org/wiki/New_Bedford,_Massachusetts), MA, a city about 100km south of Boston. I have both US and EU citizenship (as a citizen of the Republic of Lithuania).
           
@@ -18,9 +18,9 @@
           I helped found the [Lithuanian Youth Association of France](http://prancuzija.pljs.org) and have served, since graduation, as the class secretary of my class at [Phillips Academy](http://www.andover.edu).
 
     %section
-      %a#namesubhead.trigger(href="#{anchors["name"]}" title="Click to expand/collapse topic")
+      %a#name_subhead.trigger(href="#{subheads["name"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Name →
-      #namebody.toggle(style="#{showmes["name"]}")
+      #name_body.toggle(style="#{subheads["name"][:showme]}")
         :markdown
           My first name, which I share with my father and grandfather, is indigenous to Brazil. Its etymology is asserted in the *[Vocabulário tupi-guarani português](http://www.worldcat.org/title/vocabulario-tupi-guarani-portugues/oclc/9234037)* as:
           

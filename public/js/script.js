@@ -7,8 +7,8 @@ $('.trigger').removeAttr('href');
 $('.trigger').click(function() {
 	var stateobj = { foo: "bar" }; // Just some data for pushState…
 	var pathname = location.pathname; // the current url after 'moacir.com'
-	var togglename = $(this).attr('id').replace('subhead', '');
-	var togglediv = togglename + 'body';
+	var togglename = $(this).attr('id').replace('_subhead', '');
+	var togglediv = togglename + '_body';
 	var togglepatt = new RegExp(togglename);
 	var trailslash = new RegExp(/\/$/);
 	if (!$('#'+togglediv).is(':visible')){ // is the toggle not visible? if yes:
