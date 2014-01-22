@@ -8,7 +8,7 @@ set :erb, :layout_engine => :haml, :layout => :layout
 
 get '/?' do
         nav = ["", "", ""]
-        erb :index, :locals => {:nav => nav}
+        haml :index, :locals => {:nav => nav}
 end
 
 get '/about' do
@@ -20,7 +20,7 @@ get '/about' do
 		showmes[subhead] = ""
 		anchors[subhead] = "about/#{subhead}/"
 	end
-	erb :about, :locals => {:nav => nav, :showmes => showmes, :anchors => anchors}
+	haml :about, :locals => {:nav => nav, :showmes => showmes, :anchors => anchors}
 end
 
 get '/about/*' do
@@ -45,14 +45,14 @@ get '/about/*' do
 		anchors = Hash.new
 		for subhead in subheads
 			if topics.index(subhead)
-				showmes[subhead] = "style='display: block;'"
+				showmes[subhead] = "display: block;"
 				anchors[subhead] = "-#{subhead}/"
 			else
 				showmes[subhead] = ""
 				anchors[subhead] = "#{subhead}/"
 			end
 		end	
-		erb :about, :locals => {:nav => nav, :showmes => showmes, :anchors => anchors}
+		haml :about, :locals => {:nav => nav, :showmes => showmes, :anchors => anchors}
 	end
 end
 
@@ -97,14 +97,14 @@ get '/academics/*' do
 		anchors = Hash.new
 		for subhead in subheads
 			if topics.index(subhead)
-				showmes[subhead] = "style='display: block;'"
+				showmes[subhead] = "display: block;"
 				anchors[subhead] = "-#{subhead}/"
 			else
 				showmes[subhead] = ""
 				anchors[subhead] = "#{subhead}/"
 			end
 		end	
-		erb :academics, :locals => {:nav => nav, :showmes => showmes, :anchors => anchors}
+		haml :academics, :locals => {:nav => nav, :showmes => showmes, :anchors => anchors}
 	end
 end
 

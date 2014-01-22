@@ -1,0 +1,61 @@
+#main.wrapper.clearfix
+  %article
+    %header
+      %h1 Hello.
+    %section
+      %a#biosubhead.trigger(href="#{anchors["bio"]}" title="Click to expand/collapse topic")
+        %h2 Bio →
+      #biobody.toggle(style="#{showmes["bio"]}")
+        :markdown
+          I am from [New Bedford](http://en.wikipedia.org/wiki/New_Bedford,_Massachusetts), MA, a city about 100km south of Boston. I have both US and EU citizenship (as a citizen of the Republic of Lithuania).
+          
+          In 2004, I earned my AB with Honors from the [Department of English Language and Literature](http://english.uchicago.edu) at the [University of Chicago](http://www.uchicago.edu). The same department granted me an AM in 2005. Having defended my dissertation in January 2014, I expect to receive my PhD from them in June 2014.
+          
+          From 2009–2012, I lived in Paris as the [ALT Fellow](http://alt.uchicago.edu). For 2012–2013, I worked in Vilnius to finish my dissertation, *[The Site of the Novel](/academics/dissertation)* under the Blair Dissertation-Year Write-Up Fellowship. Throughout my academic career, I have also worked in many different information technology capacities in various departments at the University of Chicago.
+          
+          My free time is largely spent engaged as either a consumer of or participant in sports and music. I like to kick a ball around and play the cavaquinho.
+          
+          I helped found the [Lithuanian Youth Association of France](http://prancuzija.pljs.org) and have served, since graduation, as the class secretary of my class at [Phillips Academy](http://www.andover.edu).
+
+    %section
+      %a#namesubhead.trigger(href="#{anchors["name"]}" title="Click to expand/collapse topic")
+        %h2 Name →
+      #namebody.toggle(style="#{showmes["name"]}")
+        :markdown
+          My first name, which I share with my father and grandfather, is indigenous to Brazil. Its etymology is asserted in the *[Vocabulário tupi-guarani português](http://www.worldcat.org/title/vocabulario-tupi-guarani-portugues/oclc/9234037)* as:
+          
+          > **Mboací** — v. tr. Fazer doer, provocar dores, maguar, ofender, ferir. Daqui vem **moaci** que passou a prenome sob a forma **Moacir**.
+          >
+          > […]
+          >  
+          > **Moacyr** — adj. Aquele que causa dores, que molesta, o doloroso. Prenome masculino. [[machine translation](http://translate.google.com/#pt|en|%20%20%20%20Mboac%C3%AD%20%E2%80%94%20v.%20tr.%20Fazer%20doer%2C%20provocar%20dores%2C%20maguar%2C%20ofender%2C%20ferir.%20Daqui%20vem%20moaci%20que%20passou%20a%20prenome%20sob%20a%20forma%20Moacir.%0A%0A%20%20%20%20[%E2%80%A6]%0A%0A%20%20%20%20Moacyr%20%E2%80%94%20adj.%20Aquele%20que%20causa%20dores%2C%20que%20molesta%2C%20o%20doloroso.%20Prenome%20masculino.)]
+
+          The name also has a literary history, as it is the name given to the son in the 1865 Brazilian novel *[Iracema](http://en.wikipedia.org/wiki/Iracema)*. The son is a talisman of a promise to a mixed Brazilian culture, expressed racially by blending indigenous and European blood:
+            
+          > [Iracema, sentindo que se lhe rompia o seio](http://books.google.com.br/books?id=MEbKsiomE2QC&amp;pg=PA148&amp;dq=%22Iracema,+sentindo+que+se+lhe+rompia+o+seio%22&amp;hl=en&amp;ei=wd7xTf7kCMKp8AP2063zAw&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CCcQ6AEwAA#v=onepage&amp;q=%22Iracema%2C%20sentindo%20que%20se%20lhe%20rompia%20o%20seio%22&amp;f=false), buscou a margem do rio, onde crescia o coqueiro.
+          >
+          > Estreitou-se com a haste da palmeira. A dor lacerou suas entranhas; porém logo o choro infantil inundou sua alma de júbilo.
+          >
+          > A jovem mãe, orgulhosa de tanta ventura, tomou o tenro filho nos braços e com ele arrojou-se às aguas limpidas do rio. Depois suspendeu-o à teta mimosa; seus olhos então o envolviam de tristeza e amor.
+          >
+          > — Tu és Moacir, o nascido de meu sofrimento.
+          >
+          > A ará, pousada no olho do coqueiro, repetiu Moacir; e desde então a ave amiga unia em seu canto ao nome da mãe, o nome do filho. [[machine translation](http://translate.google.com/#pt|en|%20%20%20%20Iracema%2C%20sentindo%20que%20se%20lhe%20rompia%20o%20seio%2C%20buscou%20a%20margem%20do%20rio%2C%20onde%20crescia%20o%20coqueiro.%0A%0A%20%20%20%20Estreitou-se%20com%20a%20haste%20da%20palmeira.%20A%20dor%20lacerou%20suas%20entranhas%3B%20por%C3%A9m%20logo%20o%20choro%20infantil%20inundou%20sua%20alma%20de%20j%C3%BAbilo.%0A%0A%20%20%20%20A%20jovem%20m%C3%A3e%2C%20orgulhosa%20de%20tanta%20ventura%2C%20tomou%20o%20tenro%20filho%20nos%20bra%C3%A7os%20e%20com%20ele%20arrojou-se%20%C3%A0s%20aguas%20limpidas%20do%20rio.%20Depois%20suspendeu-o%20%C3%A0%20teta%20mimosa%3B%20seus%20olhos%20ent%C3%A3o%20o%20envolviam%20de%20tristeza%20e%20amor.%0A%0A%20%20%20%20%E2%80%94%20Tu%20%C3%A9s%20Moacir%2C%20o%20nascido%20de%20meu%20sofrimento.%0A%0A%20%20%20%20A%20ar%C3%A1%2C%20pousada%20no%20olho%20do%20coqueiro%2C%20repetiu%20Moacir%3B%20e%20desde%20ent%C3%A3o%20a%20ave%20amiga%20unia%20em%20seu%20canto%20ao%20nome%20da%20m%C3%A3e%2C%20o%20nome%20do%20filho.)]
+
+          The baby’s name is translated in the recent [LoLA edition](http://www.amazon.com/exec/obidos/tg/detail/-/0195115481/ref=sib_vae_dp/102-3411003-0229768?%5Fencoding=UTF8&amp;no=283155&amp;me=ATVPDKIKX0DER&amp;st=books) as “[Child of suffering](http://www.amazon.com/gp/reader/0195115481/ref=sib_vae_pg_16/102-3411003-0229768?_encoding=UTF8&amp;keywords=Moacir&amp;p=S04F&amp;twc=5&amp;checkSum=zES7HgPVMiJouubcucEuL1vjqdlbENchndYFsHd3Esk%3D#reader-link).” It is unclear what or who is *causing* the suffering. To my ears, “Child of suffering” suggests that the baby is not related to creating the pain. The above definition of “Moacyr” invalidates that reading. In the Foreword to the LoLA edition, Lindstrom shows how the mother, Iracema, [suffers after giving birth](http://www.amazon.com/gp/reader/0195115481/ref=sib_vae_pg_16/102-3411003-0229768?%5Fencoding=UTF8&amp;keywords=Moacir&amp;p=S04F&amp;twc=5&amp;checkSum=zES7HgPVMiJouubcucEuL1vjqdlbENchndYFsHd3Esk%3D#reader-link), but that suffering is interpreted as emblematic of the insufficiency of the native population to maintain Brazil. The son, then, is not the cause of the suffering, but the promissory note of a brilliant, mixed future. On the other hand, he is, still, causing the suffering by representing a surrender of the indigenous racial (and cultural) past to the Portuguese colonizers. Let’s not even get started on how ludicrous it is to speak of Brazilian culture by using only the Indians and Portuguese as points of references—even in 1865.
+            
+  %aside
+    %h1 Quickly about me
+    %ul
+      %li
+        %a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") Curriculum vitæ (pdf)
+      %li
+        %a(href="http://moacir.com/donkeyhottie/") Donkey Hottie
+        (blog)
+      %li
+        %a(href="http://lithchat.com/") Lithchat
+        (blog on hiatus)
+
+    %p.twitter
+      %a(class="twitter-follow-button" itemprop="url" href="http://twitter.com/muziejus" data-show-count="false") Follow @muziejus
+      %script(src="http://platform.twitter.com/widgets.js" type="text/javascript")
