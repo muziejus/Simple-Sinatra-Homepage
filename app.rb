@@ -9,19 +9,24 @@ def nav_array(index = 0)
   (1..3).map{|i| i == index ? "lifted" : ""}
 end
 
+def subhead_hash(subheads, topics = [], path = "")
+  Hash[
+    subheads.map do |subhead|
+      if topics.index(subhead)
+        [subhead, { :showme => "display: block", :anchor => "-#{subhead}/" }]
+      else
+        [subhead, { :showme => "", :anchor => "#{path}#{subhead}/" }]
+      end
+    end
+  ]
+end
+
 get '/?' do
-  haml :index, :locals => {:nav => nav_array}
+  haml :index, :locals => { :nav => nav_array }
 end
 
 get '/about' do
-  subheads = ["bio", "name"]
-  showmes = Hash.new
-  anchors = Hash.new
-  for subhead in subheads
-    showmes[subhead] = ""
-    anchors[subhead] = "about/#{subhead}/"
-  end
-  haml :about, :locals => {:nav => nav_array(1), :showmes => showmes, :anchors => anchors}
+  haml :about, :locals => { :nav => nav_array(1), :subheads => subhead_hash(["bio", "name"], [], "about/") }
 end
 
 get '/about/*' do
@@ -39,36 +44,16 @@ get '/about/*' do
     path = path.gsub('//', '/')
     redirect path
   else
-    topics = params[:splat].first.split("/")
-    subheads = ["bio", "name"]
-    showmes = Hash.new
-    anchors = Hash.new
-    for subhead in subheads
-      if topics.index(subhead)
-        showmes[subhead] = "display: block;"
-        anchors[subhead] = "-#{subhead}/"
-      else
-        showmes[subhead] = ""
-        anchors[subhead] = "#{subhead}/"
-      end
-    end 
-    haml :about, :locals => {:nav => nav_array(1), :showmes => showmes, :anchors => anchors}
+    haml :about, :locals => { :nav => nav_array(1), :subheads => subhead_hash(["bio", "name"], params[:splat].first.split("/")) }
   end
 end
 
 get '/contact/?' do
-  erb :contact, :locals => {:nav => nav_array(3)}
+  erb :contact, :locals => { :nav => nav_array(3) }
 end
 
 get '/academics' do
-  subheads = ["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"]
-  showmes = Hash.new
-  anchors = Hash.new
-  for subhead in subheads
-    showmes[subhead] = ""
-    anchors[subhead] = "academics/#{subhead}/"
-  end
-  haml :academics, :locals => {:nav => nav_array(2), :showmes => showmes, :anchors => anchors}
+  haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], [], "academics/") }
 end
 
 get '/academics/*' do
@@ -88,20 +73,7 @@ get '/academics/*' do
     path = path.gsub('//', '/')
     redirect path
   else
-    topics = params[:splat].first.split("/")
-    subheads = ["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"]
-    showmes = Hash.new
-    anchors = Hash.new
-    for subhead in subheads
-      if topics.index(subhead)
-        showmes[subhead] = "display: block;"
-        anchors[subhead] = "-#{subhead}/"
-      else
-        showmes[subhead] = ""
-        anchors[subhead] = "#{subhead}/"
-      end
-    end 
-    haml :academics, :locals => {:nav => nav_array(2), :showmes => showmes, :anchors => anchors}
+    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], params[:splat].first.split("/")) }
   end
 end
 
