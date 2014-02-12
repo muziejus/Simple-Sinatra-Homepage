@@ -37,7 +37,7 @@ get '/about/*' do
   if /-/.match(params[:splat].first)
     path = params[:splat].first
     /-[a-z]*/ =~ path
-    parttohide = Regexp.last_match(0).gsub(/-/, '') 
+    parttohide = Regexp.last_match(0).gsub(/-/, '')
     path = path.gsub(/-([a-z]*)\//i, '')
     path = path.gsub(parttohide, '')
     path = path.gsub(/^/, '/about/')
@@ -57,7 +57,7 @@ get '/academics' do
 end
 
 get '/academics/*' do
-  if /(poparticles|presentations|selfpublishing|cartography)/.match(params[:splat].first) 
+  if /(poparticles|presentations|selfpublishing|cartography)/.match(params[:splat].first)
     redirect params[:splat].first.gsub(/^/, '/academics/publishing/') unless /(\/publishing|^publishing)/.match(params[:splat].first)
   end
   if /-/.match(params[:splat].first)
@@ -66,7 +66,7 @@ get '/academics/*' do
       path = path.gsub(/(poparticles|presentations|selfpublishing|cartography)\//, '')
     end
     /-[a-z]*/ =~ path
-    parttohide = Regexp.last_match(0).gsub(/-/, '') 
+    parttohide = Regexp.last_match(0).gsub(/-/, '')
     path = path.gsub(/-([a-z]*)\//i, '')
     path = path.gsub(parttohide, '')
     path = path.gsub(/^/, '/academics/')
@@ -75,6 +75,10 @@ get '/academics/*' do
   else
     haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], params[:splat].first.split("/")) }
   end
+end
+
+get '/calendar' do
+  haml :calendar, :locals => { :nav => nav_array }
 end
 
 error do
