@@ -81,6 +81,10 @@ get '/calendar' do
   haml :calendar, :locals => { :nav => nav_array }
 end
 
+not_found do
+  'Sinatra is giving a 404.'
+end
+
 error do
     'Sorry there was a nasty error - ' + env['sinatra.error'].name
 end
