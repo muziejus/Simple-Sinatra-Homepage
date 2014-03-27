@@ -81,7 +81,7 @@ get '/calendar' do
   haml :calendar, :locals => { :nav => nav_array }
 end
 
-get '/talks/mla-15-geocritical-explorations-within-the-text' do
+get '/talks/mla-15-geocritical-explorations-inside-the-text' do
   redirect "http://moacir.com/donkeyhottie/2014/03/01/geocritical-explorations-within-the-text/"
 end
 
