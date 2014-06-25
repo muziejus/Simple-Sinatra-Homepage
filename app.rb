@@ -53,7 +53,7 @@ get '/contact/?' do
 end
 
 get '/academics' do
-  haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], [], "academics/") }
+  haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["current", "dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], [], "academics/") }
 end
 
 get '/academics/*' do

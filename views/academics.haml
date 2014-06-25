@@ -6,38 +6,164 @@
         %a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") CV pdf
         )
     %section
+      %a#current_subhead.trigger(href="#{subheads["current"][:anchor]}" title="Click to expand/collapse topic")
+        %h2 Current work →
+      #current_body.toggle(style="#{subheads["current"][:showme]}")
+        :markdown
+          I am currently involved in three large-scale academic projects, two proposed monographs and one web application.
+
+          The first book, *Sites in the Novel*, takes the theoretical foundation
+          of my dissertation to expand the spatiotemporalities I investigate in
+          terms of the realist novel's ability to shape political change.
+          Instead of acrsibing a critical method or political ideology to the
+          novel from the top down, I argue that the novel itself, as a genre
+          featuring a collection of sites, exposes the answers it already has
+          at hand within the multi-voiced worlds that constitute it. This
+          reframing allows the fundamental trope of realism—the metonymic
+          network of relations between objects—to assist the reader in finding,
+          in J. K. Gibson-Graham's words, the “creativity to generate actual
+          possibilities where none formerly existed.” Every novel is a box of
+          revolutionary building blocks, waiting for a new construction.
+
+          The monograph will build upon my readings on American novels of the
+          1930s, adding the way in which contemporary novels, especially
+          appearing after the emergence of the bricolage politics of Occupy,
+          perform and produce object relations within them that can model
+          political change in the worlds outside the novel. The aesthetic
+          encounter, matched with the interpretive act, can still be political
+          today.
+
+          *The Novel Map*, a second monograph, attempts to resolve the
+          epistemological quandary encountered when trying to decide on a role
+          for quantitative geographical analysis on aesthetic objects.
+          Building upon the work of geographical oscillations between the
+          worlds outside the literary object and those within, which typically
+          falls under the term “geocriticism,” my work attempts to bridge
+          between geocriticism and what has been called “qualitative GIS” to
+          argue for mixed methods approaches that expand the way in which
+          reading and interpreting is done. Instead of “solving for scale”
+          based on certain preimagined systems of power (the argument I
+          challenge in *Sites in the Novel*), *The Novel Map* shows how useful
+          an experimental and iterative mode of literary analysis can be. 
+
+          Finally, I am designing an online atlas of John Dos Passos's *U. S.
+          A.* This project will be an open-source, RESTful web service
+          providing access to the spatial data in Dos Passos's work. It will
+          also have its own front end. By offering this service, I hope that
+          scholars from around the world will be able to make use of the atlas
+          to challenge, rebuild, and redefine their own Dos Passos scholarship.
+          Once the project is complete, I hope to abstract it and make it
+          available to anyone who wants to build a similar atlas for any other
+          literary object.
+
+    %section
       %a#dissertation_subhead.trigger(href="#{subheads["dissertation"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Dissertation →
       #dissertation_body.toggle(style="#{subheads["dissertation"][:showme]}")
         :markdown
-          *The Site of the Novel: Objects in American Realism, 1930–1940* ([abstract pdf](http://moacir.com/pdfs/MoacirPdeSaPereira-dissertation-abstract.pdf)) is the name of the dissertation I wrote and defended in January 2014 under the direction of [Lauren Berlant](http://english.uchicago.edu/faculty/berlant) and [Kenneth W. Warren(http://english.uchicago.edu/faculty/warren). The dissertation sits at the intersection of my interests in:
+          “The Site of the Novel: Objects in American Realism, 1930–1940”
+          ([abstract
+          pdf](http://moacir.com/pdfs/MoacirPdeSaPereira-dissertation-abstract.pdf))
+          is the name of the dissertation I wrote and defended in January 2014
+          under the direction of [Lauren
+          Berlant](http://english.uchicago.edu/faculty/berlant) and [Kenneth W.
+          Warren(http://english.uchicago.edu/faculty/warren). The dissertation
+          sits at the intersection of my interests in:
 
-          * **Early 20th century American realist novels**. I am writing about James T. Farrell’s *Studs Lonigan* trilogy, John Dos Passos’s *U.S.A.*, Ernest Hemingway’s *For Whom the Bell Tolls*, and Sinclair Lewis’s *It Can’t Happen Here*. Each work engages with radical and communist politics of the early 20th century.
+          * **Early 20th century American realist novels**. I am writing
+          about James T. Farrell’s *Studs Lonigan* trilogy, John Dos
+          Passos’s *U.S.A.*, Ernest Hemingway’s *For Whom the Bell Tolls*,
+          and Sinclair Lewis’s *It Can’t Happen Here*. Each work engages
+          with radical and communist politics of the early 20th century.
 
-          * **(Human) geography and quantitative literary criticism**. All these works are very closely attached to the real world, and I have been able to collect data about the geographies constructed in the worlds of the novels. Using techniques from GIS and approaching the works geographically / spatially drew out questions about more fundamental ways in which the novel works.
+          * **(Human) geography and quantitative literary criticism**. All
+          these works are very closely attached to the real world, and I have
+          been able to collect data about the geographies constructed in the
+          worlds of the novels. Using techniques from GIS and approaching the
+          works geographically / spatially drew out questions about more
+          fundamental ways in which the novel works.
 
-          * **Belonging and community**. The works I investigate feature human characters that often blend into their surroundings, either becoming part of a larger human community or hanging together as part of a larger site of human and nonhuman objects.
+          * **Belonging and community**. The works I investigate feature human
+          characters that often blend into their surroundings, either becoming
+          part of a larger human community or hanging together as part of a
+          larger site of human and nonhuman objects.
 
-          * **Realism as a literary genre and realism as a philosophical ontology**. As the notions of individual (or character) and community (of objects) become more and more inter-related while still independent, it becomes impossible to maintain a human-centric, correlationist account of the worlds within literature.
+          * **Realism as a literary genre and realism as a philosophical
+          ontology**. As the notions of individual (or character) and community
+          (of objects) become more and more inter-related while still
+          independent, it becomes impossible to maintain a human-centric,
+          correlationist account of the worlds within literature.
 
-          * **Non-scalar and affective accounts of relations**. Entities like communities, characters and their surroundings become considerable as proper “sites,” with their own internal relationships that can be occasionally rhythmically stratifying and occasionally unpredictably deterritorializing, reforming the object of the site. As the component objects keep agitating each other they imply from another direction the necessity of a non-human, site-based literary criticism.
+          * **Non-scalar and affective accounts of relations**. Entities like
+          communities, characters and their surroundings become considerable as
+          proper “sites,” with their own internal relationships that can be
+          occasionally rhythmically stratifying and occasionally unpredictably
+          deterritorializing, reforming the object of the site. As the
+          component objects keep agitating each other they imply from another
+          direction the necessity of a non-human, site-based literary
+          criticism.
 
-          * **Metonymy and chronotopes**. A non-human, site-based literary criticism forces humans, characters, texts, worlds in texts, and the like into a heteroglottic cacophony of objects—all real, all metonymically (as opposed to metaphorically) connected. Furthermore, the worlds in novels are chronotopically connected to the worlds in which the novels are written, as the author and reader are both influenced by the specific chronotopes of their own sites.
+          * **Metonymy and chronotopes**. A non-human, site-based literary
+          criticism forces humans, characters, texts, worlds in texts, and the
+          like into a heteroglottic cacophony of objects—all real, all
+          metonymically (as opposed to metaphorically) connected. Furthermore,
+          the worlds in novels are chronotopically connected to the worlds in
+          which the novels are written, as the author and reader are both
+          influenced by the specific chronotopes of their own sites.
 
-          * **Counterfactual worlds and alternatives to neoliberalism**. The specific chronotopes of the novels influence the worlds in which they exist as well, meaning every realist novel permits, in J. K. Gibson-Graham’s [words](http://law.uvic.ca/demcon/victoria_colloquium/documents/gibson_2008_progress_paper.pdf), the “creativity to generate actual possibilities where none formerly existed.” Every novel, hence, is a box of revolutionary building blocks.
+          * **Counterfactual worlds and alternatives to neoliberalism**. The
+          specific chronotopes of the novels influence the worlds in which they
+          exist as well, meaning every realist novel permits, in J. K.
+          Gibson-Graham’s
+          [words](http://law.uvic.ca/demcon/victoria_colloquium/documents/gibson_2008_progress_paper.pdf),
+          the “creativity to generate actual possibilities where none formerly
+          existed.” Every novel, hence, is a box of revolutionary building
+          blocks.
 
     %section
       %a#otherinterests_subhead.trigger(href="#{subheads["otherinterests"][:anchor]}" title="Click to expand/collapse topic")
         %h2 Other interests →
       #otherinterests_body.toggle(style="#{subheads["otherinterests"][:showme]}")
         :markdown
-          Beyond what gets sufficient coverage in my dissertation, there are a wider set of interests that circulate around those key themes. I keep tabs on work done on early 20th century African-American and American communist literature, and I was lucky enough to assist in a course on latin@ literature and intellectual thought. Regarding the novel as a generic object of study, I’m interested in theories of the novel, histories of the novel, and contemporary attempts to use “distant reading” techniques to help better conceptualize this giant object called “the novel.”
+          Beyond what gets sufficient coverage in my dissertation, there are a
+          wider set of interests that circulate around those key themes. I keep
+          tabs on work done on early 20th century African-American and American
+          communist literature, and I was lucky enough to assist in a course on
+          latin@ literature and intellectual thought. Regarding the novel as a
+          generic object of study, I’m interested in theories of the novel,
+          histories of the novel, and contemporary attempts to use “distant
+          reading” techniques to help better conceptualize this giant object
+          called “the novel.”
 
-          More specifically, the way in which geography is plotted in the novel remains a top interest of mine. On the one hand, I seek to use techniques from human geography in my research, to try and reclaim a voice for space alongside history in the novel. On the other hand, I am also interested in how quantitative approaches to geography, namely through GIS, can also suggest new avenues of literary criticism. Though GIS plays a very modest role in my dissertation, each chapter’s genesis came from specifically geographical questions about how the actions in the novel are spatially distributed.
+          More specifically, the way in which geography is plotted in the novel
+          remains a top interest of mine. On the one hand, I seek to use
+          techniques from human geography in my research, to try and reclaim a
+          voice for space alongside history in the novel. On the other hand, I
+          am also interested in how quantitative approaches to geography,
+          namely through GIS, can also suggest new avenues of literary
+          criticism. Though GIS plays a very modest role in my dissertation,
+          each chapter’s genesis came from specifically geographical questions
+          about how the actions in the novel are spatially distributed.
 
-          Additionally, my interest in community and belonging extends other forms of identity expression within groups, such as nationalism. This is best expressed in the course I designed and taught in 2008, “Male Fantasy Sports” ([syllabus](http://moacir.com/pdfs/ENGL-25917_GNDR-21803_syllabus.pdf)), where the students and I read theoretical texts on masculinity, sexuality, and nationalism before moving to three literary objects about baseball and three about football (soccer) in England.
+          Additionally, my interest in community and belonging extends other
+          forms of identity expression within groups, such as nationalism. This
+          is best expressed in the course I designed and taught in 2008, “Male
+          Fantasy Sports”
+          ([syllabus](http://moacir.com/pdfs/ENGL-25917_GNDR-21803_syllabus.pdf)),
+          where the students and I read theoretical texts on masculinity,
+          sexuality, and nationalism before moving to three literary objects
+          about baseball and three about football (soccer) in England.
 
-          The literature surrounding English football hooligans, including fictional objects about them, fictional objects by them, as well as ethnographies and memoirs, continues to appeal to me as a crucible in which bubble concerns about the state, empire, individuality, and the power and appeal of the collective. Some of these ideas I collected into a 2012 article for *The Classical*, called “[Paris is Earning](http://theclassical.org/articles/paris-is-earning),” about neoliberalism and Parisian football hooligans. While not a work of literary criticism, the article shows a possible future line of inquiry for me.
+          The literature surrounding English football hooligans, including
+          fictional objects about them, fictional objects by them, as well as
+          ethnographies and memoirs, continues to appeal to me as a crucible in
+          which bubble concerns about the state, empire, individuality, and the
+          power and appeal of the collective. Some of these ideas I collected
+          into a 2012 article for *The Classical*, called “[Paris is
+          Earning](http://theclassical.org/articles/paris-is-earning),” about
+          neoliberalism and Parisian football hooligans. While not a work of
+          literary criticism, the article shows a possible future line of
+          inquiry for me.
 
     %section
       %a#publishing_subhead.trigger(href="#{subheads["publishing"][:anchor]}" title="Click to expand/collapse topic")
@@ -50,6 +176,8 @@
             :markdown
               * “Society and Soccer.” *The Classical*. [18 March 2014](http://theclassical.org/articles/society-and-soccer)
 
+              * “Gido apie Vilnių autoriai verti pasitikėjimo.” *Lrytas.lt*. [16 October 2013](http://www.lrytas.lt/-13819328531381668508-gido-apie-vilni%C5%B3-autoriai-verti-pasitik%C4%97jimo.htm)
+
               * “Paris Is Earning.” *The Classical*. [9 January 2012](http://theclassical.org/articles/paris-is-earning).
 
               * “#JamesFrancoFacts.” *The Chronicle Review*. [27 February 2011](http://chronicle.com/article/JamesFrancoFacts/126537/).
@@ -61,6 +189,10 @@
             %h3 Presentations →
           #presentations_body.toggle(style="#{subheads["presentations"][:showme]}")
             :markdown
+              * Presider and covener of the special session “Geocritical Explorations inside the Text” at the [130th MLA Annual Convention](http://www.mla.org/convention). January 2015
+            
+              * “Sites in the Novel” at the [Futures of American Studies Institute](http://www.dartmouth.edu/~futures/) at Dartmouth College. June 2014. ([slides](/talks/sites-in-thenovel-fasi14))
+
               * “Robert Jordan’s Nearest Neighbor: A *For Whom the Bell Tolls* GIS” at *[Telling stories with maps: the geoweb, qualitative GIS and narrative mapping](http://hestia.open.ac.uk/telling-stories-with-maps/)* at the [Digital Humanities Hub](http://www.birmingham.ac.uk/facilities/digitalhumanitieshub/index.aspx) at the University of Birmingham. April 2014. ([slides](/talks/robert-jordans-nearest-neighbor/))
 
               * “*Studs Lonigan*’s Failing Bodies and Other Objects Subject to Change” at the [Interdisciplinary Workshop in Paris](http://cas.uchicago.edu/workshops/workshop-info/interdisciplinary-workshop-in-paris/). February 2012.
@@ -89,6 +221,8 @@
             %h3 Cartography →
           #cartography_body.toggle(style="#{subheads["cartography"][:showme]}")
             :markdown
+              * “Hyderabad State-Bombay Presidency Frontier Zone c. 1900” in Beverley, Eric Lewis. “Frontier as Resource: Law, Crime, and Sovereignty on the Margins of Empire.” *Comparative Studies in Society and History* 55, no. 2 (2013): 241–272. [doi: 10.1017/S0010417513000029](http://dx.doi.org/10.1017/S0010417513000029).
+
               * “Reorganization of Princely Hyderabad” in Datla, Kavita. *[The Language of Secular Islam: Urdu Nationalism and Colonial India](http://www.uhpress.hawaii.edu/p-8940-9780824836092.aspx)*. Honolulu, HI: University of Hawai‘i Press, 2013.
 
               * Multiple maps in Howard, Hugh. *[Mr. and Mrs. Madison’s War: America’s First Couple and the Second War of Independence](http://hughhoward.com/?p=15)*. New York, NY: Bloomsbury Press, 2012.
@@ -147,6 +281,10 @@
       %h2 Tools →
     #tools_body.toggle(style="#{subheads["tools"][:showme]}")
       :markdown
+        * [Vim](http://www.vim.org) (Free), an infamous text editor that is central to my programming, presentation authoring, and note taking.
+
+        * [Deck.js](http://imakewebthings.com/deck.js/) (Free), a JavaScript library for making presentations in html.
+
         * [DEVONthink Pro](http://www.devon-technologies.com/products/devonthink/index.html), an information management system for Mac OS X.
 
         * [Zotero](http://www.zotero.org/) (Free), a cross-platform bilbiographic database manager for [Firefox](http://www.getfirefox.com/). ([profile](https://www.zotero.org/moacir/3330))
