@@ -73,7 +73,7 @@ get '/academics/*' do
     path = path.gsub('//', '/')
     redirect path
   else
-    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], params[:splat].first.split("/")) }
+    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["current", "dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], params[:splat].first.split("/")) }
   end
 end
 
