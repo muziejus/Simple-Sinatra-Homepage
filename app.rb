@@ -86,7 +86,9 @@ get '/talks/mla-15-geocritical-explorations-inside-the-text' do
 end
 
 not_found do
-  'Sinatra is giving a 404.'
+  'Sinatra is giving a 404.
+	
+	Try removing the trailing slash (the “/” at the end of the URL)'
 end
 
 error do
