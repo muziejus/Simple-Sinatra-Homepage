@@ -44,7 +44,7 @@ get '/about/*' do
     path = path.gsub('//', '/')
     redirect path
   else
-    haml :about, :locals => { :nav => nav_array(1), :subheads => subhead_hash(["bio", "name"], params[:splat].first.split("/")) }
+    haml :about, :locals => { :nav => nav_array(1), :subheads => subhead_hash(%w(bio name), params[:splat].first.split("/")) }
   end
 end
 
@@ -73,12 +73,35 @@ get '/academics/*' do
     path = path.gsub('//', '/')
     redirect path
   else
-    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["current", "dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], params[:splat].first.split("/")) }
+    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(%w(current dissertation otherinterests publishing teaching tinkering tools poparticles presentations selfpublishing cartography), params[:splat].first.split("/")) }
   end
 end
 
 get '/calendar' do
   haml :calendar, :locals => { :nav => nav_array }
+end
+
+get '/talks/mla-15-geocritical-explorations-inside-the-text-beta' do
+	haml :mla_15_geocritical, :layout => :layout_mla, :locals => { :nav  => nav_array(2), :subheads => subhead_hash(%w(bios abstracts proposal /talks/mla-15-geocritical-explorations-inside-the-text-beta), []) }
+end
+
+get '/talks/mla-15-geocritical-explorations-inside-the-text-beta/*' do
+  # Add this if block
+  if params[:splat].first.empty?
+    redirect '/talks/mla-15-geocritical-explorations-inside-the-text-beta'
+  end
+  if /-/.match(params[:splat].first)
+    path = params[:splat].first
+    /-[a-z]*/ =~ path
+    parttohide = Regexp.last_match(0).gsub(/-/, '')
+    path = path.gsub(/-([a-z]*)\//i, '')
+    path = path.gsub(parttohide, '')
+    path = path.gsub(/^/, '/talks/mla-15-geocritical-explorations-inside-the-text-beta/')
+    path = path.gsub('//', '/')
+    redirect path
+  else
+		haml :mla_15_geocritical, :layout => :layout_mla, :locals => { :nav  => nav_array(2), :subheads => subhead_hash(%w(bios abstracts proposal), params[:splat].first.split("/")) }
+  end
 end
 
 get '/talks/mla-15-geocritical-explorations-inside-the-text' do
