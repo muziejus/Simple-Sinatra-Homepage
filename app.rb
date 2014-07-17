@@ -81,14 +81,14 @@ get '/calendar' do
   haml :calendar, :locals => { :nav => nav_array }
 end
 
-get '/talks/mla-15-geocritical-explorations-inside-the-text-beta' do
-	haml :mla_15_geocritical, :layout => :layout_mla, :locals => { :nav  => nav_array(2), :subheads => subhead_hash(%w(bios abstracts proposal /talks/mla-15-geocritical-explorations-inside-the-text-beta), []) }
+get '/talks/mla-15-geocritical-explorations-inside-the-text' do
+	haml :mla_15_geocritical, :layout => :layout_mla, :locals => { :nav  => nav_array(2), :subheads => subhead_hash(%w(bios abstracts proposal /talks/mla-15-geocritical-explorations-inside-the-text), []) }
 end
 
-get '/talks/mla-15-geocritical-explorations-inside-the-text-beta/*' do
+get '/talks/mla-15-geocritical-explorations-inside-the-text/*' do
   # Add this if block
   if params[:splat].first.empty?
-    redirect '/talks/mla-15-geocritical-explorations-inside-the-text-beta'
+    redirect '/talks/mla-15-geocritical-explorations-inside-the-text'
   end
   if /-/.match(params[:splat].first)
     path = params[:splat].first
@@ -96,7 +96,7 @@ get '/talks/mla-15-geocritical-explorations-inside-the-text-beta/*' do
     parttohide = Regexp.last_match(0).gsub(/-/, '')
     path = path.gsub(/-([a-z]*)\//i, '')
     path = path.gsub(parttohide, '')
-    path = path.gsub(/^/, '/talks/mla-15-geocritical-explorations-inside-the-text-beta/')
+    path = path.gsub(/^/, '/talks/mla-15-geocritical-explorations-inside-the-text/')
     path = path.gsub('//', '/')
     redirect path
   else
@@ -104,8 +104,12 @@ get '/talks/mla-15-geocritical-explorations-inside-the-text-beta/*' do
   end
 end
 
-get '/talks/mla-15-geocritical-explorations-inside-the-text' do
-  redirect "http://moacir.com/donkeyhottie/2014/03/01/geocritical-explorations-within-the-text/"
+get '/talks/mla-15-geocritical-explorations-inside-the-text-beta' do
+  redirect '/talks/mla-15-geocritical-explorations-inside-the-text'
+end
+
+get '/talks/mla-15-geocritical-explorations-inside-the-text-beta/*' do
+  redirect '/talks/mla-15-geocritical-explorations-inside-the-text'
 end
 
 not_found do
