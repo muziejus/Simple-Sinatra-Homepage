@@ -1,15 +1,8 @@
-#main.wrapper.clearfix
-  %article
-    %header
-      %h1
-        Academics (
-        %a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") CV pdf
-        )
-    %section
-      %a#current_subhead.trigger(href="#{subheads["current"][:anchor]}" title="Click to expand/collapse topic")
-        %h2 Current work →
-      #current_body.toggle(style="#{subheads["current"][:showme]}")
-        :markdown
+#main.wrapper.clearfix %article %header %h1 Academics (
+%a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") CV pdf) %section
+%a#current_subhead.trigger(href="#{subheads["current"][:anchor]}" title="Click
+to expand/collapse topic") %h2 Current work →
+#current_body.toggle(style="#{subheads["current"][:showme]}") :markdown
 
           I am currently involved in three large-scale academic projects: two
           proposed monographs and one web application.
@@ -197,7 +190,7 @@
             
               * “Sites in the Novel” at the [Futures of American Studies Institute](http://www.dartmouth.edu/~futures/) at Dartmouth College. June 2014. ([slides](/talks/sites-in-the-novel-fasi14/))
 
-              * “Robert Jordan’s Nearest Neighbor: A *For Whom the Bell Tolls* GIS” at *[Telling stories with maps: the geoweb, qualitative GIS and narrative mapping](http://hestia.open.ac.uk/telling-stories-with-maps/)* at the [Digital Humanities Hub](http://www.birmingham.ac.uk/facilities/digitalhumanitieshub/index.aspx) at the University of Birmingham. April 2014. ([slides](/talks/robert-jordans-nearest-neighbor/))
+              * “Robert Jordan’s Nearest Neighbor: A *For Whom the Bell Tolls* GIS” at *[Telling stories with maps: the geoweb, qualitative GIS and narrative mapping](http://hestia.open.ac.uk/telling-stories-with-maps/)* at the [Digital Humanities Hub](http://www.birmingham.ac.uk/facilities/digitalhumanitieshub/index.aspx) at the University of Birmingham. April 2014. ([slides](/talks/robert-jordans-nearest-neighbor/) / [video](https://www.youtube.com/watch?v=yz58tmCl8TQ))
 
               * “*Studs Lonigan*’s Failing Bodies and Other Objects Subject to Change” at the [Interdisciplinary Workshop in Paris](http://cas.uchicago.edu/workshops/workshop-info/interdisciplinary-workshop-in-paris/). February 2012.
 
