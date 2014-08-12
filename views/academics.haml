@@ -1,9 +1,14 @@
-#main.wrapper.clearfix %article %header %h1 Academics (
-%a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") CV pdf) %section
-%a#current_subhead.trigger(href="#{subheads["current"][:anchor]}" title="Click
-to expand/collapse topic") %h2 Current work →
-#current_body.toggle(style="#{subheads["current"][:showme]}") :markdown
-
+#main.wrapper.clearfix 
+  %article 
+    %header 
+      %h1 
+        Academics (
+        %a(href="http://moacir.com/pdfs/MoacirPdeSaPereira-cv.pdf") CV pdf) 
+    %section
+      %a#current_subhead.trigger(href="#{subheads["current"][:anchor]}" title="Click to expand/collapse topic") 
+        %h2 Current work →
+      #current_body.toggle(style="#{subheads["current"][:showme]}")
+        :markdown
           I am currently involved in three large-scale academic projects: two
           proposed monographs and one web application.
 
