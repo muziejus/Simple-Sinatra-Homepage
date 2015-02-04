@@ -53,7 +53,7 @@ get '/contact/?' do
 end
 
 get '/academics' do
-  haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["current", "dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], [], "academics/") }
+  haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(["current", "digitalhumanities", "dissertation", "otherinterests", "publishing", "teaching", "tinkering", "tools", "poparticles", "presentations", "selfpublishing", "cartography"], [], "academics/") }
 end
 
 get '/academics/*' do
@@ -73,7 +73,7 @@ get '/academics/*' do
     path = path.gsub('//', '/')
     redirect path
   else
-    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(%w(current dissertation otherinterests publishing teaching tinkering tools poparticles presentations selfpublishing cartography), params[:splat].first.split("/")) }
+    haml :academics, :locals => { :nav => nav_array(2), :subheads => subhead_hash(%w(current digitalhumanities dissertation otherinterests publishing teaching tinkering tools poparticles presentations selfpublishing cartography), params[:splat].first.split("/")) }
   end
 end
 
