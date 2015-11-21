@@ -12,9 +12,6 @@ public/htaccess
 public/otherdocs
 public/cgi-bin
 
-# And fonts I don't have the right to distribute
-public/css/fonts
-
 # OS generated files #
 ######################
 .DS_Store
