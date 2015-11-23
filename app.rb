@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'haml'
+require 'slim'
 
 class App < Sinatra::Base
   set :haml, :format => :html5
@@ -114,6 +115,10 @@ class App < Sinatra::Base
 
   get '/talks/mla-15-geocritical-explorations-inside-the-text-beta/*' do
     redirect '/talks/mla-15-geocritical-explorations-inside-the-text'
+  end
+
+  get '/courses-nyu/map-city-novel-2016/?' do
+    slim :map_city_novel_index
   end
 
   not_found do
