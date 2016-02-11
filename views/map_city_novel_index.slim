@@ -164,8 +164,7 @@ markdown:
   dérive should be counted in kilometers and hours, though, to encourage
   enough space and time for you to get good and lost in at least your
   thoughts. Make sure your draw a bunch of cards and let your dérive be good
-  and disrupted. Don’t simply follow something green the length of Manhattan
-  and call it a day.
+  and disrupted. 
 
   Make sure you’ve taken good notes in your [Field Papers
   atlas](#field-papers), and hopefully your phone’s GPS didn’t completely fail
@@ -181,9 +180,9 @@ markdown:
   think help indicate how you made use of your time lost in the city and in
   your thoughts to synthesize the city with your readings.
 
-  If your phone’s GPS behaved, making the shapefile is as easy as exporting the
-  GPX file to CartoDB. If the GPS failed, you can use your Field Papers to
-  build an electronic version of your journey in CartoDB.
+  If your phone’s GPS app behaved, making the shapefile is as easy as exporting
+  the GPX file to [CartoDB](#cartodb). If the GPS failed, you can use your
+  Field Papers to build an electronic version of your journey in CartoDB.
 
   The Field Papers are the Field Papers. Easy!
 
@@ -597,4 +596,24 @@ ul
   li#markdown-example <a href="https://en.wikipedia.org/wiki/Markdown#Example" target="_blank">Wikipedia Markdown example</a>: a cheatsheet for using Markdown.
   li#markdown-editor <a href="https://jbt.github.io/markdown-editor/" target="_blank">Online Markdown Editor</a>: write, render, and save your markdown documents in the browser.
   li#imgur Hotlinking images: Use <a href="http://www.imgur.com" target="_blank">imgur</a> to host your photos. Then you can use the Markdown syntax: <code>![Obama with a football](http://i.imgur.com/YnQZEa7.gif)</code>.
+  li#cartodb <a href="https://cartodb.com" target="_blank">CartoDB</a>: A freeish online GIS application. How to make a shapefile:
+  ol
+    li Register with <a href="https://cartodb.com" target="_blank">CartoDB</a> and login.
+    li Click on the green button that reads “New Map.”
+    li Choose the link “Create empty map.”
+    li Choose “Add lines,” as that’s the kind of shape you are making.
+    li Zoom in to New York City (or type “new york city” into the search box on the blank map).
+    li Zoom in to at least level 17. 18 is even better.
+    li Start clicking on the map to draw your journey. Be deliberate and slow.
+    li Move the map around with your arrow keys, to avoid making mistakes.
+    li When you are finished, click the “done” button at the top of the map. Your blue line should become orange.
+    li Click the “slider” from “Map View” to “Data View.”
+    li Give a name and description to your solitary line by clicking on the two “null”s for your line.
+    li Go to your data library by clicking on the arrow in the top left by the green lock, and then clicking on the “Maps” menu and choosing “your datasets.” This can also take the form of <code>https://CARTODB_USERNAME.cartodb.com/dashboard/datasets</code>.
+    li Click on the dataset and change the name by clicking on “untitled_table_1.” Say “OK Rename.”
+    li Add metadata by clicking on “Edit metadata…” 
+    li Save.
+    li In the “Edit” menu in the top-right, choose “Export layer.”
+    li Click on the purple “SHP” for shapefile.
+    li You should get a zipfile with the same name as your dataset. That’s what you want to submit.
   
