@@ -34,7 +34,7 @@ class App
     if params[:regrets] 
       body << "Sorry you won’t be attending this event.\n"
     else
-      params[:guest_num] == 1 ? guest_txt = "1 guest" : guest_txt = "#{params[:guest_num]} guests"
+      params[:guest_num] == "1" ? guest_txt = "1 guest" : guest_txt = "#{params[:guest_num]} guests"
       body << "Thank you for RSVPing to the party. As a reminder, the date is Saturday, 7 May 2016.\n\nYou have RSVPed for #{guest_txt} for the following events:\n\n"
       if params[:cocktails]
         body << "* 16:00: Cocktails at Moacir’s (14 Washington Pl, 4E)\n"
