@@ -1,0 +1,40 @@
+#main.wrapper.clearfix
+  %article
+    #photo_box{style: "align: center; width: 800px; height: 535px; background-image: url(/images/40_party_page.png);"}
+      #form_box{style: "margin-left: 25px; margin-top: 15px; float: left; width: 280px;"}
+        %form{action: "/is40", method: "post"}
+          %fieldset{style: "line-height: 180%; color: #186437; font-weight: bold;"}
+            %input{name: "name", type: "text", value: "name", style: "background: url(/images/canary_bg.png) repeat left #fdfdbf; font-family: 'Azuro', Helvetica, sans-serif; color: #186437; width: 250px;", onfocus: "this.value = '';"}/
+            %br
+
+            %input{name: "email", type: "text", value: "email", style: "background: url(/images/canary_bg.png) repeat left #fdfdbf; font-family: 'Azuro', Helvetica, sans-serif; color: #186437; width: 250px;", onfocus: "this.value = '';"}/
+            %br
+
+            %select{name: "guest_num", style: "background-color: #fdfdbf; font-family: 'Azuro', Helvetica, sans-serif; color: #186437;"}
+              %option{value: "1"}= "1 guest"
+              %option{value: "2"}= "2 guests"
+              %option{value: "3"}= "3 guests"
+            %br
+
+            %input{name: "cocktails", type: "checkbox"}
+            %label{for: "cocktails"} 1. Beer, etc. @ 16:00 🍺, 🎥 
+            %br
+            
+            %input{name: "dinner", type: "checkbox"}
+            %label{for: "dinner"} 2. Dinner @ 19:00 🍛 
+            %br
+
+            %input{name: "drinks", type: "checkbox"}
+            %label{for: "drinks"} 3. Drinks, etc. @ 22:00 🍻🍸🍾,🍕 💊🎯
+            %br
+
+            %input{name: "regrets", type: "checkbox"}
+            %label{for: "regrets"}X. Sorry, I can’t come 😞
+            %br
+
+            %textarea{name: "note", style: "background: url(/images/canary_bg.png) repeat left #fdfdbf; width: 250px; font-family: 'Azuro', Helvetica, sans-serif; color: #186437; padding: 5px; ", onfocus: "this.value = '';"}
+              Additional comments?
+            %br
+            
+            %input{type: "submit", value: "RSVP!", style: "background-color: #186437; color: #fdfdbf; font-family: 'Azuro', Helvetica, sans-serif;"}
+
