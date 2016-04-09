@@ -22,7 +22,7 @@ class App
         port: '587', enable_starttls_auto: true,
         authentication: :plain, domain: 'localhost.localdomain'
       },
-      subject: "[Moacir Is 40] Confirmation of your RSVP",
+      subject: "[Moacir Is 40] Confirmation of #{params[:name]}’s RSVP",
       attachments: attachments,
       body: body
     )
