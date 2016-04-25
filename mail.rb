@@ -14,7 +14,9 @@ class App
     [:cocktails, :dinner, :drinks].each do |event|
       params[event] == "on" ? params[event] = true : params[event] = false
     end
-    Guest.create(name: params[:name], email: params[:email], numbers: params[:guest_num], cocktails: params[:cocktails], dinner: params[:dinner], drinks: params[:drinks], comment: params[:note], added_on: Time.now)
+    unless params[:regrets] == "on"
+      Guest.create(name: params[:name], email: params[:email], numbers: params[:guest_num], cocktails: params[:cocktails], dinner: params[:dinner], drinks: params[:drinks], comment: params[:note], added_on: Time.now)
+    end
     Pony.mail(
       to: "#{params[:email]}, moacir@moacir.com",
       from: "moacir.is.40.bot@gmail.com",
