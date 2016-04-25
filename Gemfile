@@ -11,3 +11,5 @@ gem 'redcarpet'
 gem 'shotgun'
 
 gem 'pony'
+gem 'data_mapper'
+gem 'dm-sqlite-adapter'
