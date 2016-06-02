@@ -122,9 +122,13 @@ class App < Sinatra::Base
   end
 
   not_found do
-    'Sinatra is giving a 404.<br>
-    
-    Try adding a trailing slash (the “/” at the end of the URL)'
+    if request.path =~ /talks.*\/$/
+      redirect request.path + 'index.html'
+    else
+      'Sinatra is giving a 404.<br>
+      
+      Try adding or removing a trailing slash (the “/” at the end of the URL)'
+    end
   end
 
   error do
