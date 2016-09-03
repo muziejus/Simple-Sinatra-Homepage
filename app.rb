@@ -121,6 +121,10 @@ class App < Sinatra::Base
     slim :map_city_novel_index
   end
 
+  get '/courses-nyu/does-it-work/?' do
+    slim :does_it_work_index, layout: :layout_diw
+  end
+
   not_found do
     if request.path =~ /talks.*\/$/
       redirect request.path + 'index.html'
