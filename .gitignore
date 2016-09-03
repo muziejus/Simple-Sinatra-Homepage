@@ -8,6 +8,8 @@ public/*.rdf
 public/*.php
 public/htaccess
 
+*.pid
+
 # And directories that relate to other things
 public/otherdocs
 public/cgi-bin
