@@ -10,6 +10,12 @@ public/htaccess
 
 *.pid
 
+# stuff from my 40th birthday.
+bday*
+*.ics
+public/images/40*
+public/images/canary*
+
 # And directories that relate to other things
 public/otherdocs
 public/cgi-bin
