@@ -139,6 +139,6 @@ class App < Sinatra::Base
       'Sorry there was a nasty error - ' + env['sinatra.error'].name
   end
 
-  require './mail'
+  # require './bday_mail'
 
 end
