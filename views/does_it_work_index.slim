@@ -19,7 +19,7 @@ p Over the past decade, literary study has become increasingly, reflexively
   sharper contrast. Students will, then, see how debates about interpretation are
   lived and experienced within the digital humanities, both in theory and
   practice. Finally, students will learn to use digital methodologies in their
-  interpretation, with possible projects in corpus analysis, topic modeling, and
+  interpretation, with possible projects in textual analysis, topic modeling, and
   geospatial analysis.
 
 h2#goals Goals of the course
@@ -37,7 +37,8 @@ ul
       li creating (as well as using and distributing) geospatial datasets,
 GISes, and cartographic visualizations of the former;
 
-      li creating (as well as using and distributing) datasets in <code>R</code>;
+      li creating (as well as using and distributing) corpora in <code>Python</code>;
+      li using <code>NLTK</code> to investigate the properties of a text;
         
       li researching popular and scholarly writing on a topic;
         
@@ -120,7 +121,7 @@ p During the digital section of
   digital tool or project you have found online, possibly even making some
   quick use of the <em>Gatsby</em> dataset. The tool or project should be
   appropriate to that day’s work, meaning statistical analysis tools and
-  projects fit for the <code>R</code> days, while spatial analysis tools and
+  projects fit for the <code>Python</code> days, while spatial analysis tools and
   projects fit better for the <code>Carto</code> days. You can sign up on the
   first day for these presentations. Your presentation will also have a short
   (1 page) written component that you will turn in. The goal of the
@@ -279,7 +280,7 @@ h2#syllabus Syllabus
 
 markdown:
 
-  The handsome, printer-friendly `pdf` version of the syllabus is available [here](/pdfs/does-it-work-2016-syllabus.pdf).
+  The handsome, printer-friendly `pdf` version of the syllabus is available [here](https://github.com/muziejus/does-it-work/blob/master/syllabus.pdf).
 
 h1 Materials
 
@@ -330,8 +331,8 @@ markdown:
   These five weeks serve as an opportunity to learn new methods of literary
   criticism, now based in digital tools. We will learn how to use
   <code>Voyant</code> to quickly see patterns in the text of \textit{The Great
-    Gatsby}, <code>R</code> to analyze the text within a high-level statistical
-  programming environment,\footnote{The unit on <code>R</code> is adapted from
+    Gatsby}, <code>Python</code> to analyze the text within a high-level statistical
+  programming environment,\footnote{The unit on <code>Python</code> is adapted from
     Jockers.} and, finally, <code>NYWalker</code> and <code>Carto</code> to learn how
   to make maps to analyse the geographical space of <em>The Great Gatsby</em>.
 
@@ -340,13 +341,13 @@ markdown:
   * Wednesday, 12 Oct: Ramsay, “Algorithmic Criticism” and <code>Voyant</code> 
     and <em>The Great Gatsby</em>
   
-  * Monday, 17 Oct: Introduction to <code>R</code>
+  * Monday, 17 Oct: Introduction to <code>Python</code>
 
-  * Wednesday, 19 Oct: (<em>Digital presentations begin</em>), <code>R</code> and <em>The Great Gatsby</em>
+  * Wednesday, 19 Oct: (<em>Digital presentations begin</em>), <code>Python</code> and <em>The Great Gatsby</em>
 
-  * Monday, 24 Oct: <code>R</code> and <em>The Great Gatsby</em>
+  * Monday, 24 Oct: <code>Python</code> and <em>The Great Gatsby</em>
 
-  * Wednesday,  26 Oct: <code>R</code> and <em>The Great Gatsby</em>
+  * Wednesday,  26 Oct: <code>Python</code> and <em>The Great Gatsby</em>
 
   * Monday, 31 Oct: <code>NYWalker</code> and <em>The Great Gatsby</em>
 
@@ -397,8 +398,8 @@ table.table.table-hover
     <tr><td>4. 26.9, 28.9 </td><td> Tredell </td><td> Tredell </td></tr>
     <tr><td>5. 3.10, 5.10 </td><td> Bersani, Latour </td><td> Sedgwick, Felski </td></tr>
     <tr><td>6. 10.10, 12.10 </td><td> <strong>No class</strong>  </td><td> Ramsay / <code>Voyant</code> and <em>Gatsby</em> </td></tr>
-    <tr><td>7. 17.10, 19.10 </td><td> <code>R</code> and <em>Gatsby</em> </td><td> <code>R</code> and <em>Gatsby</em> (Digital presentations begin) </td></tr>
-    <tr><td>  8. 24.10, 26.10 </td><td> <code>R</code> and <em>Gatsby</em> </td><td> <code>R</code> and <em>Gatsby</em> </td></tr>
+    <tr><td>7. 17.10, 19.10 </td><td> Intro to <code>Python</code> </td><td> <code>Python</code> and <em>Gatsby</em> (Digital presentations begin) </td></tr>
+    <tr><td>  8. 24.10, 26.10 </td><td> <code>Python</code> and <em>Gatsby</em> </td><td> <code>Python</code> and <em>Gatsby</em> </td></tr>
     <tr><td>  9. 31.10, 2.11 </td><td> <code>NYWalker</code> and <em>Gatsby</em> </td><td> <code>Carto</code> and <em>Gatsby</em> </td></tr>
     <tr><td>  10. 7.11, 9.11 </td><td> <code>Carto</code> and <em>Gatsby</em> </td><td> <code>Carto</code> and <em>Gatsby</em> </td></tr>
     <tr><td>  11. 14.11, 16.11 </td><td> Pynchon (Novel presentations begin) </td><td> Pynchon </td></tr>
@@ -413,6 +414,8 @@ markdown:
 
   * Bersani, Leo. “Pynchon, Paranoia, and Literature.” *Representations*, no. 25 (1989): 99–118. [doi:10.2307/2928469](http://dx.doi.org/10.2307/2928469).
 
+  * Bird, Steven, Ewan Klein, and Edward Loper. *Natural Language Processing with Python*. Second edition. NLTK Project, 2016. [http://www.nltk.org/book/](http://www.nltk.org/book/).
+
   * Felski, Rita. *The Limits of Critique*. Chicago: The University of Chicago Press, 2015.
 
   * Fitzgerald, F. Scott. *The Great Gatsby*. 1925. New York: Scribner, 2004.
@@ -423,9 +426,13 @@ markdown:
 
   * Massumi, Brian. “Translator’s Foreword: Pleasures of Philosophy.” In *A Thousand Plateaus: Capitalism and Schizophrenia*, translated by Brian Massumi, ix–xv. Minneapolis: University of Minnesota Press, 1987.
 
+  * Perkins, Jacob. *Python 3 Text Processing with NLTK 3 Cookbook*. Second edition. Birmingham, UK: Packt Publishing, 2014.
+
   * Pynchon, Thomas. *The Crying of Lot 49*. 1965. New York: Harper Perennial, 2006.
 
   * Ramsay, Stephen. *Reading Machines: Toward an Algorithmic Criticism*. Urbana: University of Illinois Press, 2011.
+
+  * Reeve, Jonathan. “Text Analysis and Visualization with Python and the NLTK.” *GitHub*, 2016-04-13. [https://github.com/JonathanReeve/dataviz-workshop/blob/master/dataviz-workshop.ipynb](https://github.com/JonathanReeve/dataviz-workshop/blob/master/dataviz-workshop.ipynb).
 
   * Sedgwick, Eve Kosofsky. “Paranoid Reading and Reparative Reading, or, You’re So Paranoid, You Probably Think This Essay Is about You.” In *Touching Feeling: Affect, Pedagogy, Performativity*, 123–152. Durham, NC: Duke University Press, 2003.
 
@@ -444,10 +451,15 @@ ul
 
   li#nywalker <a href="http://nywalker.newyorkscapes.org" target="_blank"><code>NYWalker</code> homepage</a>: an application for building geodatasets of individual novels.
 
-  li#rstudio <a href="https://www.rstudio.com/" target="_blank"><code>RStudio</code> homepage</a>: an IDE for <code>R</code>.
+  li#pythonthehardway <a href="https://learnpythonthehardway.org/book/" target="_blank"><em>Learn <code>Python</code> the Hard Way</em></a>: an online book that teaches you <code>Python</code>, well, the hard way.
 
-  li#tryr <a href="http://tryr.codeschool.com/" target="_blank"><code>R</code> tutorial at Code School</a>: A fun tutorial that even earns you a badge for your LinkedIn profile.
+  li#pythontut <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">The <code>Python</code> Tutorial</a>: the official introduction to the language.
 
-  li#swirlstats <a href="http://swirlstats.com/" target="_blank">Swirlstats</a>: an interactive <code>R</code> tutorial in the console.
+  li#anaconda <a href="https://www.continuum.io/downloads" target="_blank">Anaconda</a>: a <code>Python</code> installer for Windows, Mac, and Linux.
 
-  li#r <a href="http://www.r-project.org" target="_blank"><code>R</code> homepage: self-explanatory.
+  li#dhbox <a href="http://dhbox.org" target="_blank">DHBox</a>: a virtual digital humanities computer that gives, among other things, temporary access to <code>Python</code>.
+
+  li#trypython <a href="https://www.codeschool.com/courses/try-python" target="_blank">Try <code>Python</code></a>: a three-hour online course from Code School that introduces <code>Python</code>.
+
+  li#pythonthehardway <a href="https://learnpythonthehardway.org/book/" target="_blank"><em>Learn <code>Python</code> the Hard Way</em></a>: Zed A. Shaw’s very opinionated and slightly outdated (some exercises break on <code>Python 3</code>) introduction to <em>programming</em> via <code>Python</code>. Very methodical.
+
