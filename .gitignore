@@ -15,6 +15,7 @@ bday*
 *.ics
 public/images/40*
 public/images/canary*
+views/is40*
 
 # And directories that relate to other things
 public/otherdocs
