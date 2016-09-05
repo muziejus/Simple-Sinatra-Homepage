@@ -1,8 +1,6 @@
 simple-sinatra-homepage
 =======================
 
-## This software is no longer being updated to Github. As the site itself is moving to hosting on AWS, there is too much extraneous data (pdfs, images, etc.) involved in the repository to warrant pushing it to Github.
-
 This is what the source code for [moacir.com](http://moacir.com) looks
 like. It might not be the prettiest code in the world, but it does what
 I want to.
