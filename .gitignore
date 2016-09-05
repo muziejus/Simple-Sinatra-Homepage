@@ -25,6 +25,8 @@ public/cgi-bin
 # Somehow this slipped through the cracks…
 .bundle
 
+*.log
+
 # OS generated files #
 ######################
 .DS_Store
