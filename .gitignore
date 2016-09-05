@@ -8,6 +8,7 @@ public/*.rdf
 public/*.php
 public/htaccess
 
+# pidfiles shouldn't be in version control
 *.pid
 
 # stuff from my 40th birthday.
