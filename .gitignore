@@ -22,6 +22,9 @@ views/is40*
 public/otherdocs
 public/cgi-bin
 
+# Somehow this slipped through the cracks…
+.bundle
+
 # OS generated files #
 ######################
 .DS_Store
