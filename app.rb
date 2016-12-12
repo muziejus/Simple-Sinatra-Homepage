@@ -125,6 +125,14 @@ class App < Sinatra::Base
     slim :does_it_work_index, layout: :layout_diw
   end
 
+  get '/courses-nyu/english-101-2017/?' do
+    redirect 'https://muziejus.github.io/english-101-2017/syllabus.html'
+  end
+
+  get '/courses-nyu/english-101-2017/syllabus.pdf' do
+    redirect 'https://muziejus.github.io/english-101-2017/syllabus.pdf'
+  end
+
   not_found do
     if request.path =~ /talks.*\/$/
       redirect request.path + 'index.html'
