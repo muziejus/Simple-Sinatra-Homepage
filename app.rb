@@ -133,6 +133,10 @@ class App < Sinatra::Base
     redirect 'https://muziejus.github.io/english-101-2017/syllabus.pdf'
   end
 
+  get '/wandering-rocks/?' do
+    redirect 'http://muziejus.github.io/wandering-rocks/'
+  end
+
   not_found do
     if request.path =~ /talks.*\/$/
       redirect request.path + 'index.html'
