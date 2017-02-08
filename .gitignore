@@ -7,6 +7,8 @@ public/*.txt
 public/*.rdf
 public/*.php
 public/htaccess
+public/courses
+public/talks
 
 # pidfiles shouldn't be in version control
 *.pid
