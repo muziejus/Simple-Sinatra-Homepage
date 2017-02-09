@@ -137,6 +137,10 @@ class App < Sinatra::Base
     redirect 'http://muziejus.github.io/wandering-rocks/'
   end
 
+  get '/dmfjsn-files.zip' do
+    redirect 'https://muziejus.github.io/digital-mapping-for-javascript-novices/files/files.zip'
+  end
+
   not_found do
     if request.path =~ /talks.*\/$/
       redirect request.path + 'index.html'
