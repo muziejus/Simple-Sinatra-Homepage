@@ -22,4 +22,6 @@ threads threads_count, threads_count
 
 rackup "config.ru"
 
+stdout_redirect 'access.log', 'error.log'
+
 daemonize
