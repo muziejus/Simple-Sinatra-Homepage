@@ -151,6 +151,10 @@ class App < Sinatra::Base
     end
   end
 
+  get '/bootstrap/?' do
+    slim :bootstrap, layout: :layout_bootstrap
+  end
+
   error do
       'Sorry there was a nasty error - ' + env['sinatra.error'].name
   end
