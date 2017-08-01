@@ -204,8 +204,15 @@ footer {
     background-color: transparent;
 }
 
+.w-pic {
+  width: 40%!important;
+}
 
 @media(min-width:768px) {
+
+  .w-pic {
+    width: 50%!important;
+  }
     .navbar-inverse {
         border-color: transparent;
         background-color: transparent;
