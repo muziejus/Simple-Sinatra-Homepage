@@ -53,7 +53,7 @@ body {
 }
 
 body {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
     background-color: #282828;
     color: #d3d3d3;
     webkit-tap-highlight-color: #222;
@@ -85,7 +85,7 @@ a:focus {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -151,7 +151,7 @@ footer {
 
 .navbar-light {
     border-color: rgba(35,35,35,.05);
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
     background-color: #222;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -159,7 +159,7 @@ footer {
 }
 
 .navbar-brand {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
     color: #9c27b0;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
@@ -271,7 +271,7 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg');
+    background-image: url('/images/riodetail-inv.png');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
