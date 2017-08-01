@@ -89,8 +89,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 23px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
@@ -149,7 +149,7 @@ footer {
     padding: 0;
 }
 
-.navbar-light {
+.navbar-inverse {
     border-color: rgba(35,35,35,.05);
     font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
     background-color: #222;
@@ -172,10 +172,10 @@ footer {
     color: #8b27b0;
 }
 
-.navbar-light .navbar-toggle:focus, .navbar-light .navbar-toggle:hover {
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #181818;
 }
-.navbar-light .navbar-toggle, .navbar-light .navbar-collapse {
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-collapse {
     border-color: transparent;
 }
 
@@ -206,7 +206,7 @@ footer {
 
 
 @media(min-width:768px) {
-    .navbar-light {
+    .navbar-inverse {
         border-color: transparent;
         background-color: transparent;
         min-height: 60px;
@@ -217,8 +217,8 @@ footer {
         padding: 19px;
     }
 
-    .navbar-light .navbar-brand:hover,
-    .navbar-light .navbar-brand:focus {
+    .navbar-inverse .navbar-brand:hover,
+    .navbar-inverse .navbar-brand:focus {
         color: #f4f4f4;
     }
 
@@ -231,7 +231,7 @@ footer {
     }
 
     .navbar-nav > li>a:hover,
-    .navbar-light .navbar-nav >li>a:focus:hover {
+    .navbar-inverse .navbar-nav >li>a:focus:hover {
         color: #fefefe;
     }
 
@@ -533,7 +533,7 @@ fieldset[disabled] .btn-default.active {
 .btn {
     border: 0;
     border-radius: 290px;
-    font-family: 'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Azuro', 'Helvetica Neue',Arial,sans-serif;
 }
 
 .btn-xl {
