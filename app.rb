@@ -152,7 +152,9 @@ class App < Sinatra::Base
   end
 
   get '/bootstrap/?' do
-    slim :bootstrap, layout: :layout_bootstrap
+    slim :bootstrap, layout: :layout_bootstrap, locals: { 
+      intro: markdown(File.read("views/intro.md"))
+    }
   end
 
   error do
@@ -162,3 +164,5 @@ class App < Sinatra::Base
   # require './bday_mail'
 
 end
+
+
