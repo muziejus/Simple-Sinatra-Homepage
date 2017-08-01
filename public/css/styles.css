@@ -316,6 +316,11 @@ footer {
 }
 
 @media(min-width:768px) {
+
+    .container {
+      max-width: 768px;
+    }
+
     .icon-lg {
         font-size: 80px;
     }
