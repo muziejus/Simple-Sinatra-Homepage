@@ -284,7 +284,8 @@ footer {
 
 header {
     position: relative;
-    min-height: auto;
+    min-height: 100%;
+    /* min-height: auto; */
     text-align: center;
     color: #fff;
     width: 100%;
@@ -346,10 +347,6 @@ footer {
         font-size: 80px;
     }
     
-    header {
-        min-height: 100%;
-    }
-
     header .header-content {
         position: absolute;
         top: 50%;
