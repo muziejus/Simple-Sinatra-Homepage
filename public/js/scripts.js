@@ -3,7 +3,10 @@
 
   $("a[href^='http']").append(" <i class='fa fa-external-link'></i>");
 
-  $("body").scrollspy({ target: "#navbar" });
+  $("body").scrollspy({ target: 
+    "#navbar",
+    offset: 100 
+  });
 
   ScrollPosStyler.init();
 
