@@ -72,10 +72,11 @@ hr.light {
 }
 
 a {
-    color: #9c27b0;
+    color: #adaada;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    text-decoration: underline;
 }
 
 a:hover,
@@ -126,7 +127,7 @@ p {
 }
 
 .text-primary {
-    color: #9c27b0;
+    color: #adaada;
 }
 
 .modal-content {
@@ -149,6 +150,10 @@ footer {
     padding: 0;
 }
 
+.navbar-toggler {
+  font-size: 1rem;
+}
+
 .navbar-inverse {
     border-color: rgba(35,35,35,.05);
     font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
@@ -160,11 +165,13 @@ footer {
 
 .navbar-brand {
     font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
-    color: #9c27b0;
+    color: #adaada;
+    text-decoration: none;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
     transition: padding .2s ease-in;
+    margin-right: 0px;
 }
 
 .navbar-brand:hover,
@@ -181,6 +188,7 @@ footer {
 
 .navbar-nav > li>a,
 .navbar-nav>li>a:focus {
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
@@ -189,12 +197,12 @@ footer {
 
 .navbar-nav > li>a:hover,
 .navbar-nav>li>a:focus:hover {
-    color: #9c27b0;
+    color: #adaada;
 }
 
 .navbar-nav > li.active>a,
 .navbar-nav>li.active>a:focus {
-    color: #9c27b0 !important;
+    color: #adaada !important;
     background-color: transparent;
 }
 
@@ -222,6 +230,7 @@ footer {
     .navbar-brand {
         color: rgba(255,255,255,0.7);
         padding: 19px;
+        margin-right: 1rem;
     }
 
     .navbar-inverse .navbar-brand:hover,
@@ -264,7 +273,7 @@ footer {
 
     .sps--blw .navbar-nav > li>a:hover,
     .sps--blw .navbar-nav>li>a:focus:hover {
-        color: #9c27b0;
+        color: #adaada;
     }
 
     p {
