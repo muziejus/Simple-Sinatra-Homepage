@@ -6,6 +6,8 @@
         offset: 60
     });
 
+    $("a[href^='http']").append(" <i class='fa fa-external-link'></i>");
+
     new WOW().init();
     
     $("a.page-scroll").click(function(event) {
