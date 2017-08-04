@@ -229,7 +229,15 @@ footer {
   display: none;
 }
 
+.title-name {
+  display: none;
+}
+
 @media(min-width:768px) {
+
+  .title-name {
+    display: block;
+  }
 
   .brand-name {
     margin-left: 1em;
@@ -317,8 +325,8 @@ footer {
 
 header {
     position: relative;
-    min-height: 100%;
-    /* min-height: auto; */
+    /* min-height: 100%; */
+    min-height: auto;
     text-align: center;
     color: #fff;
     width: 100%;
@@ -380,6 +388,10 @@ footer {
         font-size: 80px;
     }
     
+    header {
+      min-height: 100%;
+    }
+
     header .header-content {
         position: absolute;
         top: 50%;
