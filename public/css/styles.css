@@ -222,7 +222,28 @@ footer {
   font-size: 4rem;
 }
 
+.brand-name {
+}
+
+.brand-img {
+  display: none;
+}
+
 @media(min-width:768px) {
+
+  .brand-name {
+    margin-left: 1em;
+    display:none;
+  }
+
+  .sps--blw .brand-name {
+    display:inline;
+  }
+
+  .brand-img {
+    display: inline;
+    opacity: 0.9;
+  }
 
   .giant {
     font-size: 7rem;
@@ -250,7 +271,7 @@ footer {
 
     .navbar-nav > li>a,
     .navbar-nav >li>a:focus {
-        color: rgba(255,255,255,0.8);
+        color: rgba(255,255,255,0.9);
         /* padding: 20px; */
         letter-spacing: 1.1px;
         text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
@@ -272,7 +293,7 @@ footer {
 
     .sps--blw .navbar-brand:hover,
     .sps--blw .navbar-brand:focus {
-        color: #8b27b0;
+        color: #adaada;
     }
 
     .sps--blw .navbar-nav > li>a,
