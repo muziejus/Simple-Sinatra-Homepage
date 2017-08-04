@@ -95,6 +95,10 @@ p {
     margin-bottom: 20px;
 }
 
+.fa-small {
+  font-size: 75%;
+}
+
 .wide-space {
     letter-spacing: 1.6px;
 }
@@ -214,7 +218,15 @@ footer {
   width: 40%!important;
 }
 
+.giant {
+  font-size: 3rem;
+}
+
 @media(min-width:768px) {
+
+  .giant {
+    font-size: 7rem;
+  }
 
   .w-pic {
     width: 50%!important;

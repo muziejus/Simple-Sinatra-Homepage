@@ -1,7 +1,8 @@
 (function($) {
   "use strict";
 
-  $("a[href^='http']").append(" <i class='fa fa-external-link'></i>");
+  let externalLink = $.parseHTML("<span>&nbsp;<i class='fa fa-small fa-external-link'></i></span>");
+  $("a[href^='http']").append(externalLink).get(0);
 
   $("body").scrollspy({ target: 
     "#navbar",

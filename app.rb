@@ -153,9 +153,11 @@ class App < Sinatra::Base
 
   get '/bootstrap/?' do
     slim :bootstrap, layout: :layout_bootstrap, locals: { 
-      intro: markdown(File.read("views/intro.md")),
+      hello: markdown(File.read("views/hello.md")),
       bio: markdown(File.read("views/bio.md")),
-      scholarship: markdown(File.read("views/scholarship.md"))
+      contact: markdown(File.read("views/contact.md")),
+      teaching: markdown(File.read("views/teaching.md")),
+      research: markdown(File.read("views/research.md"))
     }
   end
 
