@@ -1,5 +1,5 @@
-Scholarship
------------
+Research
+--------
 
 My scholarly activity currently circles around the book-length project I am
 preparing, *Making Maps: Mixed Methods and Everyday Criticism*. Two aims guide
