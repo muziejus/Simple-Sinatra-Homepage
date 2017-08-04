@@ -170,11 +170,11 @@ footer {
 .navbar-brand {
     font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
     color: #adaada;
-    padding: 15px;
+    /* padding: 15px; */
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
     transition: padding .2s ease-in;
-    margin-right: 0px;
+    /* margin-right: 0px; */
 }
 
 .navbar-brand:hover,
@@ -192,7 +192,7 @@ footer {
 .navbar-nav > li>a,
 .navbar-nav>li>a:focus {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: .75rem;
     font-weight: 700;
     color: #eee;
 }
@@ -239,7 +239,7 @@ footer {
 
     .navbar-brand {
         color: rgba(255,255,255,0.7);
-        padding: 19px;
+        /* padding: 19px; */
         margin-right: 1rem;
     }
 
@@ -251,7 +251,7 @@ footer {
     .navbar-nav > li>a,
     .navbar-nav >li>a:focus {
         color: rgba(255,255,255,0.8);
-        padding: 20px;
+        /* padding: 20px; */
         letter-spacing: 1.1px;
         text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
     }
