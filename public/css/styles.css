@@ -324,12 +324,8 @@ footer {
 }
 
 header {
-    /* position: relative; */
-    /* /1* min-height: 100%; *1/ */
-    /* min-height: auto; */
     text-align: center;
     color: #fff;
-    /* width: 100%; */
     background-color: #c9c9c9;
     background-image: url('http://i.imgur.com/wyJsTQD.jpg');
     background-position: center;
@@ -340,10 +336,6 @@ header {
 }
 
 header .header-content {
-    /* position: relative; */
-    /* width: 100%; */
-    /* padding: 100px 15px; */
-    /* text-align: center; */
     z-index: 2;
 }
 
@@ -390,15 +382,6 @@ footer {
     
     header {
       min-height: 100%;
-    }
-
-    header .header-content {
-        /* position: absolute; */
-        /* top: 50%; */
-        /* padding: 0 50px; */
-        /* -webkit-transform: translateY(-50%); */
-        /* -ms-transform: translateY(-50%); */
-        /* transform: translateY(-50%); */
     }
 
     header .header-content .inner {
