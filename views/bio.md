@@ -1,5 +1,5 @@
-Bio
----
+About
+-----
 
 I grew up in New Bedford, Massachusetts. I defended my dissertation “The Site
 of the Novel” in January 2014, and I received my PhD from the [Department of
