@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'haml'
 require 'slim'
+require 'sprockets'
 
 class App < Sinatra::Base
   set :haml, :format => :html5

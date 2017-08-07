@@ -3,11 +3,11 @@ source 'http://rubygems.org'
 ruby '2.3.1'
 
 gem 'sinatra'
+gem 'sprockets'
 gem 'haml'
 gem 'slim'
+gem 'sass'
 gem 'redcarpet'
-# gem 'rdiscount', '2.1.7'
-# gem 'sinatra-assetpack', '0.2.8', :require => 'sinatra/assetpack'
 gem 'shotgun'
 
 gem 'pony'
