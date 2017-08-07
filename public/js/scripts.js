@@ -11,7 +11,7 @@
 
   ScrollPosStyler.init();
 
-  new WOW().init();
+  // new WOW().init();
   
   // $("a.page-scroll").click(function(event) {
   //     var $ele = $(this);
