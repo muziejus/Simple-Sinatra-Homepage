@@ -344,6 +344,15 @@ header {
     -o-background-size: cover;
 }
 
+.paris {
+  background-image: url('http://i.imgur.com/BupG0ow.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 .wilna {
   background-image: url('http://i.imgur.com/ska5YcM.jpg');
   background-position: center;
