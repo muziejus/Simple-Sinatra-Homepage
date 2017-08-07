@@ -139,6 +139,7 @@ p {
 }
 
 section {
+  min-height: auto;
     padding: 70px 0;
 }
 
