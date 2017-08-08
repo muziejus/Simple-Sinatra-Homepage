@@ -59,6 +59,11 @@ body {
   background-color: #282828;
   color: rgba(255,255,255,0.7);
   webkit-tap-highlight-color: #222;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  scroll-snap-destination: 100% 0%;
+  scroll-snap-points-y: repeat(100%);
 }
 
 hr {
@@ -136,6 +141,7 @@ p {
 section {
   min-height: auto;
   padding: 70px 0;
+  scroll-snap-align: start;
 }
 
 footer {
@@ -318,12 +324,13 @@ dl {
 }
 
 header {
-    text-align: center;
-    color: #fff;
-    background-color: #c9c9c9;
-    background-image: url('http://i.imgur.com/wyJsTQD.jpg');
-    background-position: center;
-    background-size: cover;
+  text-align: center;
+  color: #fff;
+  background-color: #c9c9c9;
+  background-image: url('http://i.imgur.com/wyJsTQD.jpg');
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: start;
 }
 
 .background-image {
