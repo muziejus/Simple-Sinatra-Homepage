@@ -230,6 +230,10 @@ dl {
   color: #fff !important;
 }
 
+.sps--blw {
+  display:none;
+}
+
 @media(min-width:768px) {
 
   .title-name {
@@ -286,7 +290,8 @@ dl {
     color: #fefefe;
   }
 
-  .sps--blw {
+  nav.sps--blw {
+    display: flex;
     border-color: rgba(34,34,34,.05);
     background-color: #222;
   }
