@@ -1,11 +1,13 @@
 require './app'
+require 'autoprefixer-rails'
 
 map '/assets' do
-  environment = Sprockets::Environment.new
-  environment.append_path 'assets/javascripts'
-  environment.append_path 'assets/stylesheets'
-  environment.append_path 'assets/templates'
-  run environment
+  assets = Sprockets::Environment.new
+  assets.append_path 'assets/javascripts'
+  assets.append_path 'assets/stylesheets'
+  assets.append_path 'assets/templates'
+  AutoprefixerRails.install(assets)
+  run assets
 end
 
 map '/' do
