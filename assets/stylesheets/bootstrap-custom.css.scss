@@ -56,7 +56,7 @@ body {
     position: relative; /* for scrollspy */
     font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
     background-color: #282828;
-    color: #d3d3d3;
+    color: rgba(255,255,255,0.7);
     webkit-tap-highlight-color: #222;
 }
 
@@ -357,6 +357,24 @@ header {
 
 .newbeige {
   background-image: url('http://i.imgur.com/pRRV8kj.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.nyc {
+  background-image: url('http://i.imgur.com/uIuqptM.jpg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.chicago {
+  background-image: url('http://i.imgur.com/pt9xsKM.jpg');
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
