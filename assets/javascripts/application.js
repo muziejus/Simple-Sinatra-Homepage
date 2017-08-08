@@ -1,3 +1,3 @@
-//= require_tree ./vendor
+//= require_tree ./vendors
 //= require scripts
 //= require_tree .
