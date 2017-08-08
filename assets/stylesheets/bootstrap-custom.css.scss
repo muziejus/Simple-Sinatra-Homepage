@@ -162,6 +162,7 @@ dl {
   font-family: 'Azuro','Helvetica Neue',Arial,sans-serif;
   background-color: #222;
   transition: all .4s;
+  display:none;
 }
 
 .navbar-brand {
@@ -222,23 +223,12 @@ dl {
   display: none;
 }
 
-.title-name {
-  display: none;
-}
-
 .close, close:hover, close:focus {
   color: #fff !important;
 }
 
-.sps--blw {
-  display:none;
-}
 
 @media(min-width:768px) {
-
-  .title-name {
-    display: block;
-  }
 
   .brand-name {
     margin-left: 1em;
@@ -266,6 +256,7 @@ dl {
     border-color: transparent;
     background-color: transparent;
     min-height: 60px;
+    display: flex;
   }
 
   .navbar-brand {
@@ -291,7 +282,6 @@ dl {
   }
 
   nav.sps--blw {
-    display: flex;
     border-color: rgba(34,34,34,.05);
     background-color: #222;
   }
