@@ -26,9 +26,11 @@ html lang="en"
           li.nav-item
             a.nav-link.page-scroll href="#teaching" Teaching
           li.nav-item
-            a.nav-link.page-scroll href="#about" About
+            a.nav-link.page-scroll href="#bio" Bio
           li.nav-item
             a.nav-link.page-scroll href="#contact" Contact
+          li.nav-item
+            a.nav-link.page-scroll href="#" data-toggle="modal" data-target="#pageModal" About
     header.d-flex.h-100.justify-content-center.align-items-center#first
       .header-content.row.justify-content-center.align-self-center
         .inner
@@ -38,11 +40,6 @@ html lang="en"
           h4.title-name Moacir P. de Sá Pereira
     == yield
 
-    footer.footer
-      p &copy; 2017,
-        <a href="/">Moacir P. de Sá Pereira</a> | Page workflow: <a href="http://www.vim.org" target="_blank">vim</a> → <a href="http://fletcherpenney.net/multimarkdown/" target="_blank">MultiMarkdown</a> and <a href="http://slim-lang.com" target="_blank">Slim</a> → <a href="http://sinatrarb.com" target="_blank">Sinatra</a> | (<a href="https://github.com/muziejus/simple-sinatra-homepage" target="_blank">GitHub</a>)
-
-    
     script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"
     script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"
     script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"

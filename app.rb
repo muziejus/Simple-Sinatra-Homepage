@@ -158,7 +158,8 @@ class App < Sinatra::Base
       bio: markdown(File.read("views/bio.md")),
       contact: markdown(File.read("views/contact.md")),
       teaching: markdown(File.read("views/teaching.md")),
-      research: markdown(File.read("views/research.md"))
+      research: markdown(File.read("views/research.md")),
+      footer: markdown(File.read("views/footer.md"))
     }
   end
 

@@ -26,11 +26,21 @@ section.bg-main.d-flex.h-100.justify-content-center.align-items-center.backgroun
     center
       a.btn.btn-default.wow.flipInX href="http://cv.moacir.com/#selectedteaching" More at cv.moacir.com
 
-section.d-flex.h-100.justify-content-center.align-items-center.background-image.wilna#about
+section.d-flex.h-100.justify-content-center.align-items-center.background-image.wilna#bio
   .container.align-self-center.black-box
     == bio
 
-section.bg-main.d-flex.h-100.justify-content-center.align-items-center.background-image.paris#contact
+section.bg-main.d-flex.flex-column.h-100.justify-content-center.background-image.paris#contact
   .container.align-self-center.black-box
     .row
       == contact
+
+.modal.fade#pageModal
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h4.modal-title About this Page
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true" &times;
+      .modal-body
+        == footer

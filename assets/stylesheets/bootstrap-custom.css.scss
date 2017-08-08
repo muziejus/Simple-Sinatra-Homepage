@@ -144,15 +144,6 @@ section {
   scroll-snap-align: start;
 }
 
-footer {
-  padding: 15px;
-}
-
-footer>p {
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-
 dl {
   font-size: 1.25rem;
   line-height: 1.25;
@@ -233,6 +224,10 @@ dl {
 
 .title-name {
   display: none;
+}
+
+.close, close:hover, close:focus {
+  color: #fff !important;
 }
 
 @media(min-width:768px) {
@@ -379,10 +374,6 @@ header .header-content .inner p {
   font-size: 16px;
   font-weight: 300;
   color: rgba(255,255,255,0.7);
-}
-
-footer {
-  background-color:#2d2d2d;
 }
 
 @media(min-width:768px) {
