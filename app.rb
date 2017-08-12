@@ -152,6 +152,13 @@ class App < Sinatra::Base
     end
   end
 
+  get '/courses/presentation-tips/?' do
+    slim "", layout: :bootstrap_naked, locals: {
+      title: "Tips for giving a good presentation",
+      content: markdown(File.read("views/presentation_tips.md"))
+    }
+  end
+
   get '/bootstrap/?' do
     slim :bootstrap, layout: :layout_bootstrap, locals: { 
       hello: markdown(File.read("views/hello.md")),
