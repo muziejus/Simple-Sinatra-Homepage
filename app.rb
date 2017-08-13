@@ -134,6 +134,14 @@ class App < Sinatra::Base
     redirect 'https://muziejus.github.io/english-101-2017/syllabus.pdf'
   end
 
+  get '/courses-nyu/english-101-2017a/?' do
+    redirect 'https://muziejus.github.io/english-101-2017a/'
+  end
+
+  get '/courses-nyu/english-101-2017a/syllabus.pdf' do
+    redirect 'https://muziejus.github.io/english-101-2017a/syllabus.pdf'
+  end
+
   get '/wandering-rocks/?' do
     redirect 'http://muziejus.github.io/wandering-rocks/'
   end
