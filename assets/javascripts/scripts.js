@@ -9,6 +9,8 @@
     offset: 100 
   });
 
+  $("a[href='http://moacir.com']").addClass("nav-link");
+
   ScrollPosStyler.init();
 
   // new WOW().init();

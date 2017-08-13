@@ -25,7 +25,6 @@ indicate what I look for when grading presentations.
    where you want the presentation to end up when you start planning it. If
    you are presenting on a specific text, for example, your goals can be that
    we, the listeners, know something about the text.
-
    Note that that doesn’t mean you just walk through a text page-by-page.
    Articles, for example, will typically have an argument or thesis they are
    trying to describe. Making that thesis clear to your listeners is the
