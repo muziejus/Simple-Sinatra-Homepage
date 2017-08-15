@@ -24,6 +24,17 @@ class App < Sinatra::Base
   end
 
   get '/?' do
+    slim :index, layout: :bootstrap_layout, locals: { 
+      hello: markdown(File.read("views/hello.md")),
+      bio: markdown(File.read("views/bio.md")),
+      contact: markdown(File.read("views/contact.md")),
+      teaching: markdown(File.read("views/teaching.md")),
+      research: markdown(File.read("views/research.md")),
+      footer: markdown(File.read("views/footer.md"))
+    }
+  end
+
+  get '/?' do
     haml :index, :locals => { :nav => nav_array }
   end
 
@@ -164,17 +175,6 @@ class App < Sinatra::Base
     slim "", layout: :bootstrap_naked, locals: {
       title: "Tips for giving a good presentation",
       content: markdown(File.read("views/presentation_tips.md"))
-    }
-  end
-
-  get '/bootstrap/?' do
-    slim :bootstrap, layout: :layout_bootstrap, locals: { 
-      hello: markdown(File.read("views/hello.md")),
-      bio: markdown(File.read("views/bio.md")),
-      contact: markdown(File.read("views/contact.md")),
-      teaching: markdown(File.read("views/teaching.md")),
-      research: markdown(File.read("views/research.md")),
-      footer: markdown(File.read("views/footer.md"))
     }
   end
 
