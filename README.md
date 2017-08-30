@@ -20,6 +20,7 @@ It probably breaks some kind of good web-governance stuff, but what do I
 know.
 
 The entire project is governed under
-[CC-BY](https://creativecommons.org/licenses/by/3.0/), which means you
+[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/), which means you
 can share or remix this to your heart's content as long as you attribute
-me, Moacir P. de Sá Pereira.
+me, Moacir P. de Sá Pereira, don’t use it for commercial use, and maintain the
+license.
