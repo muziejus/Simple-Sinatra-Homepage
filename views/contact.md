@@ -7,7 +7,9 @@
   <div class="col-8">
     <dl>
       <dt><i class="fa fa-envelope"></i></dt> 
-      <dd><a href="#" onclick="this.href='mailto:'+this.innerHTML.split('').reverse().join('')" style="unicode-bidi:bidi-override; direction: rtl;">moc.liamg@ricaom</a>&#x200E;</dd>
+      <dd><a href="#"
+      onclick="this.href='mailto:'+this.innerHTML.split('').reverse().join('')"
+      style="unicode-bidi:bidi-override; direction: rtl;">moc.liamg@xobni</a>&#x200E;</dd>
       <dt><i class="fa fa-twitter"></i></dt> 
       <dd><a href="http://twitter.com/muziejus" target="_blank">@muziejus</a></dd>
       <dt><i class="fa fa-github"></i></dt> 
