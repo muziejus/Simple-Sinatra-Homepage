@@ -161,6 +161,14 @@ class App < Sinatra::Base
     redirect 'https://muziejus.github.io/novel-maps-of-ny-2017/syllabus.pdf'
   end
 
+  get '/courses-nyu/media-history-of-nyc/?' do
+    redirect 'https://muziejus.github.io/media-history-of-nyc/'
+  end
+
+  get '/courses-nyu/media-history-of-nyc/syllabus.pdf' do
+    redirect 'https://muziejus.github.io/media-history-of-nyc/syllabus.pdf'
+  end
+
   get '/wandering-rocks/?' do
     redirect 'http://muziejus.github.io/wandering-rocks/'
   end
