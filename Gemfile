@@ -10,6 +10,7 @@ gem 'slim'
 gem 'sass'
 gem 'redcarpet'
 gem 'shotgun'
+gem 'puma'
 
 gem 'pony'
 gem 'data_mapper'
